@@ -1,0 +1,2002 @@
+[
+  {
+    "fecha": "2026-11-07T16:43:22.183Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.0.109",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:43:36.781Z",
+    "sistema": "PORTAL",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "186.10.44.169",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:43:50.747Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.6.143",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:43:59.398Z",
+    "sistema": "VPN",
+    "tipo": "conexion_vpn",
+    "severidad": "info",
+    "ip": "181.43.64.19",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Túnel VPN establecido"
+  },
+  {
+    "fecha": "2026-11-07T16:44:06.526Z",
+    "sistema": "PORTAL",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "190.161.159.145",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:44:45.863Z",
+    "sistema": "BD-OPER",
+    "tipo": "otro",
+    "severidad": "info",
+    "ip": "200.83.74.40",
+    "usuario": "admin@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Evento operativo"
+  },
+  {
+    "fecha": "2026-11-07T16:44:46.544Z",
+    "sistema": "VPN",
+    "tipo": "otro",
+    "severidad": "info",
+    "ip": "152.172.3.197",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Evento operativo"
+  },
+  {
+    "fecha": "2026-11-07T16:44:47.373Z",
+    "sistema": "AD",
+    "tipo": "login_fallido",
+    "severidad": "baja",
+    "ip": "10.20.6.124",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Contraseña incorrecta"
+  },
+  {
+    "fecha": "2026-11-07T16:44:59.855Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "200.83.224.201",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:46:14.027Z",
+    "sistema": "PORTAL",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "186.10.211.138",
+    "usuario": "admin@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:46:23.776Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.4.229",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:46:36.563Z",
+    "sistema": "PORTAL",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "152.172.154.76",
+    "usuario": "admin@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:46:38.582Z",
+    "sistema": "CORREO",
+    "tipo": "login_fallido",
+    "severidad": "baja",
+    "ip": "10.10.5.30",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Contraseña incorrecta"
+  },
+  {
+    "fecha": "2026-11-07T16:46:56.805Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "190.161.11.138",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:47:04.106Z",
+    "sistema": "FW-PERIM",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.1.122",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:47:26.040Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "186.10.34.220",
+    "usuario": "admin@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:47:53.981Z",
+    "sistema": "NAS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.7.161",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:47:59.073Z",
+    "sistema": "CORREO",
+    "tipo": "otro",
+    "severidad": "info",
+    "ip": "10.30.0.214",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Evento operativo"
+  },
+  {
+    "fecha": "2026-11-07T16:48:28.057Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.6.89",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:48:49.125Z",
+    "sistema": "ERP",
+    "tipo": "acceso_denegado",
+    "severidad": "media",
+    "ip": "10.20.0.22",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Intento de acceso a recurso sin permiso"
+  },
+  {
+    "fecha": "2026-11-07T16:48:52.772Z",
+    "sistema": "GPS-FLOTA",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.1.69",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:49:04.034Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "190.161.184.57",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:49:50.564Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.4.131",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:50:01.866Z",
+    "sistema": "FW-PERIM",
+    "tipo": "escaneo_puertos",
+    "severidad": "media",
+    "ip": "10.30.4.110",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Escaneo de puertos bloqueado"
+  },
+  {
+    "fecha": "2026-11-07T16:50:02.803Z",
+    "sistema": "FW-PERIM",
+    "tipo": "descarga_masiva",
+    "severidad": "alta",
+    "ip": "10.20.2.32",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Descarga masiva fuera de horario"
+  },
+  {
+    "fecha": "2026-11-07T16:50:03.371Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "200.83.49.96",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:51:12.426Z",
+    "sistema": "CORREO",
+    "tipo": "acceso_denegado",
+    "severidad": "media",
+    "ip": "10.10.0.213",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Intento de acceso a recurso sin permiso"
+  },
+  {
+    "fecha": "2026-11-07T16:51:44.308Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.0.80",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:52:56.446Z",
+    "sistema": "WMS",
+    "tipo": "otro",
+    "severidad": "info",
+    "ip": "10.30.4.138",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Evento operativo"
+  },
+  {
+    "fecha": "2026-11-07T16:53:16.127Z",
+    "sistema": "AD",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.0.124",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:53:18.699Z",
+    "sistema": "FW-PERIM",
+    "tipo": "escaneo_puertos",
+    "severidad": "alta",
+    "ip": "191.96.12.18",
+    "usuario": "",
+    "pais": "BR",
+    "mensaje": "Escaneo externo de puertos"
+  },
+  {
+    "fecha": "2026-11-07T16:53:27.131Z",
+    "sistema": "AD",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.1.219",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:54:29.121Z",
+    "sistema": "FW-PERIM",
+    "tipo": "escaneo_puertos",
+    "severidad": "media",
+    "ip": "10.10.7.161",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Escaneo de puertos bloqueado"
+  },
+  {
+    "fecha": "2026-11-07T16:55:23.995Z",
+    "sistema": "BD-OPER",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.0.164",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:56:44.135Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.1.109",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:57:28.856Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.4.17",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:57:53.345Z",
+    "sistema": "FW-PERIM",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.5.63",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:58:05.724Z",
+    "sistema": "GPS-FLOTA",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.4.43",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:58:10.650Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "190.161.211.11",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:58:29.305Z",
+    "sistema": "FW-PERIM",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.0.216",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:58:36.876Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.3.43",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:59:03.323Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "186.10.116.82",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T16:59:08.412Z",
+    "sistema": "FW-PERIM",
+    "tipo": "escaneo_puertos",
+    "severidad": "media",
+    "ip": "10.10.2.191",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Escaneo de puertos bloqueado"
+  },
+  {
+    "fecha": "2026-11-07T16:59:44.517Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.6.230",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:00:13.730Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "152.172.47.117",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:00:30.918Z",
+    "sistema": "WMS",
+    "tipo": "login_fallido",
+    "severidad": "baja",
+    "ip": "10.20.3.37",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Contraseña incorrecta"
+  },
+  {
+    "fecha": "2026-11-07T17:00:49.133Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "152.172.27.85",
+    "usuario": "admin@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:00:49.547Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "186.10.104.142",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:01:00.205Z",
+    "sistema": "AD",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.3.61",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:01:00.283Z",
+    "sistema": "FW-PERIM",
+    "tipo": "escaneo_puertos",
+    "severidad": "media",
+    "ip": "152.172.7.253",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Escaneo de puertos bloqueado"
+  },
+  {
+    "fecha": "2026-11-07T17:01:14.697Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.5.38",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:01:52.886Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "190.161.143.115",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:02:01.269Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.7.15",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:02:19.552Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.2.161",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:02:56.479Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "190.161.17.235",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:03:11.796Z",
+    "sistema": "AD",
+    "tipo": "login_fallido",
+    "severidad": "baja",
+    "ip": "190.161.168.172",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Contraseña incorrecta"
+  },
+  {
+    "fecha": "2026-11-07T17:03:45.334Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "200.83.235.226",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:04:04.391Z",
+    "sistema": "BD-OPER",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.2.223",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:04:19.151Z",
+    "sistema": "FW-PERIM",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.6.117",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:04:26.139Z",
+    "sistema": "PORTAL",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "190.161.188.21",
+    "usuario": "admin@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:04:33.235Z",
+    "sistema": "VPN",
+    "tipo": "conexion_vpn",
+    "severidad": "info",
+    "ip": "200.83.190.165",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Túnel VPN establecido"
+  },
+  {
+    "fecha": "2026-11-07T17:05:10.700Z",
+    "sistema": "WMS",
+    "tipo": "otro",
+    "severidad": "info",
+    "ip": "10.20.0.196",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Evento operativo"
+  },
+  {
+    "fecha": "2026-11-07T17:05:31.579Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.0.174",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:06:45.582Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "152.172.30.26",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:06:47.614Z",
+    "sistema": "NAS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.2.90",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:07:36.043Z",
+    "sistema": "VPN",
+    "tipo": "conexion_vpn",
+    "severidad": "info",
+    "ip": "200.83.145.178",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Túnel VPN establecido"
+  },
+  {
+    "fecha": "2026-11-07T17:08:01.496Z",
+    "sistema": "VPN",
+    "tipo": "conexion_vpn",
+    "severidad": "info",
+    "ip": "190.161.7.44",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Túnel VPN establecido"
+  },
+  {
+    "fecha": "2026-11-07T17:08:01.848Z",
+    "sistema": "FW-PERIM",
+    "tipo": "otro",
+    "severidad": "info",
+    "ip": "10.10.4.158",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Evento operativo"
+  },
+  {
+    "fecha": "2026-11-07T17:08:19.901Z",
+    "sistema": "AD",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.0.140",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:08:57.240Z",
+    "sistema": "AD",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.0.229",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:09:09.828Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.7.154",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:10:00.947Z",
+    "sistema": "FW-PERIM",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.7.136",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:10:20.779Z",
+    "sistema": "FW-PERIM",
+    "tipo": "escaneo_puertos",
+    "severidad": "media",
+    "ip": "10.20.4.7",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Escaneo de puertos bloqueado"
+  },
+  {
+    "fecha": "2026-11-07T17:11:37.147Z",
+    "sistema": "WMS",
+    "tipo": "login_fallido",
+    "severidad": "baja",
+    "ip": "190.161.17.166",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Contraseña incorrecta"
+  },
+  {
+    "fecha": "2026-11-07T17:11:47.171Z",
+    "sistema": "FW-PERIM",
+    "tipo": "acceso_denegado",
+    "severidad": "media",
+    "ip": "10.20.7.235",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Intento de acceso a recurso sin permiso"
+  },
+  {
+    "fecha": "2026-11-07T17:12:30.379Z",
+    "sistema": "WMS",
+    "tipo": "otro",
+    "severidad": "info",
+    "ip": "10.10.0.101",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Evento operativo"
+  },
+  {
+    "fecha": "2026-11-07T17:13:09.808Z",
+    "sistema": "AD",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.3.182",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:13:57.236Z",
+    "sistema": "PORTAL",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "181.43.245.94",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:14:00.460Z",
+    "sistema": "GPS-FLOTA",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.6.59",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:14:02.591Z",
+    "sistema": "AD",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.3.62",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:14:24.598Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.1.187",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:14:44.041Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.0.189",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:15:09.531Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "181.43.120.71",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:15:11.097Z",
+    "sistema": "GPS-FLOTA",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.2.7",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:15:15.249Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.6.109",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:15:37.809Z",
+    "sistema": "WMS",
+    "tipo": "descarga_masiva",
+    "severidad": "alta",
+    "ip": "10.30.1.130",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Descarga de volumen inusual de archivos"
+  },
+  {
+    "fecha": "2026-11-07T17:16:16.956Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.2.61",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:16:20.723Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.7.189",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:17:19.667Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.4.214",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:18:09.969Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.7.150",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:18:20.851Z",
+    "sistema": "PORTAL",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "190.161.81.17",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:18:28.701Z",
+    "sistema": "FW-PERIM",
+    "tipo": "escaneo_puertos",
+    "severidad": "media",
+    "ip": "10.10.7.195",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Escaneo de puertos bloqueado"
+  },
+  {
+    "fecha": "2026-11-07T17:18:41.194Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.7.66",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:19:26.141Z",
+    "sistema": "GPS-FLOTA",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.5.129",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:19:26.928Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.4.144",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:19:52.156Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "181.43.64.14",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:20:01.923Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.0.103",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:20:03.789Z",
+    "sistema": "GPS-FLOTA",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.5.209",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:20:30.303Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.6.241",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:20:42.395Z",
+    "sistema": "FW-PERIM",
+    "tipo": "escaneo_puertos",
+    "severidad": "alta",
+    "ip": "103.145.13.92",
+    "usuario": "",
+    "pais": "CN",
+    "mensaje": "Escaneo externo de puertos"
+  },
+  {
+    "fecha": "2026-11-07T17:20:53.885Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.0.217",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:21:27.253Z",
+    "sistema": "PORTAL",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "190.161.172.136",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:21:32.871Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "152.172.218.237",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:21:51.330Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.4.155",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:22:31.906Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.1.26",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:23:28.123Z",
+    "sistema": "CORREO",
+    "tipo": "acceso_denegado",
+    "severidad": "media",
+    "ip": "10.30.4.36",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Intento de acceso a recurso sin permiso"
+  },
+  {
+    "fecha": "2026-11-07T17:23:43.697Z",
+    "sistema": "GPS-FLOTA",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.2.236",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:24:07.494Z",
+    "sistema": "WMS",
+    "tipo": "login_fallido",
+    "severidad": "baja",
+    "ip": "10.30.1.83",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Contraseña incorrecta"
+  },
+  {
+    "fecha": "2026-11-07T17:24:18.761Z",
+    "sistema": "PORTAL",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "186.10.105.174",
+    "usuario": "admin@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:24:34.856Z",
+    "sistema": "ERP",
+    "tipo": "otro",
+    "severidad": "info",
+    "ip": "10.30.0.205",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Evento operativo"
+  },
+  {
+    "fecha": "2026-11-07T17:24:46.964Z",
+    "sistema": "PORTAL",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "190.161.41.11",
+    "usuario": "admin@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:24:50.911Z",
+    "sistema": "PORTAL",
+    "tipo": "acceso_denegado",
+    "severidad": "media",
+    "ip": "200.83.32.72",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Intento de acceso a recurso sin permiso"
+  },
+  {
+    "fecha": "2026-11-07T17:25:10.575Z",
+    "sistema": "VPN",
+    "tipo": "login_fallido",
+    "severidad": "baja",
+    "ip": "152.172.194.67",
+    "usuario": "admin@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Contraseña incorrecta"
+  },
+  {
+    "fecha": "2026-11-07T17:25:52.067Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.4.132",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:25:57.511Z",
+    "sistema": "GPS-FLOTA",
+    "tipo": "otro",
+    "severidad": "info",
+    "ip": "10.20.6.128",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Evento operativo"
+  },
+  {
+    "fecha": "2026-11-07T17:26:03.507Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.7.96",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:26:42.866Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.3.11",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:27:26.795Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.4.83",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:27:59.858Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "190.161.228.16",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:28:14.228Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.7.5",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:28:41.650Z",
+    "sistema": "NAS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.1.172",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:29:22.804Z",
+    "sistema": "FW-PERIM",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.6.52",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:29:30.087Z",
+    "sistema": "WMS",
+    "tipo": "otro",
+    "severidad": "info",
+    "ip": "152.172.198.9",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Evento operativo"
+  },
+  {
+    "fecha": "2026-11-07T17:29:34.175Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "200.83.41.217",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:30:01.897Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "181.43.160.177",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:30:08.431Z",
+    "sistema": "FW-PERIM",
+    "tipo": "otro",
+    "severidad": "info",
+    "ip": "10.30.1.118",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Evento operativo"
+  },
+  {
+    "fecha": "2026-11-07T17:30:19.057Z",
+    "sistema": "NAS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.0.204",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:30:26.234Z",
+    "sistema": "AD",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.2.12",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:31:10.612Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.6.16",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:31:42.771Z",
+    "sistema": "VPN",
+    "tipo": "conexion_vpn",
+    "severidad": "info",
+    "ip": "200.83.176.1",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Túnel VPN establecido"
+  },
+  {
+    "fecha": "2026-11-07T17:32:25.752Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.1.126",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:33:58.629Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.7.49",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:34:16.075Z",
+    "sistema": "AD",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.6.240",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:36:04.499Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.3.198",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:36:26.190Z",
+    "sistema": "PORTAL",
+    "tipo": "otro",
+    "severidad": "info",
+    "ip": "186.10.78.108",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Evento operativo"
+  },
+  {
+    "fecha": "2026-11-07T17:36:59.507Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "186.10.9.176",
+    "usuario": "admin@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:38:33.136Z",
+    "sistema": "VPN",
+    "tipo": "conexion_vpn",
+    "severidad": "info",
+    "ip": "186.10.146.214",
+    "usuario": "admin@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Túnel VPN establecido"
+  },
+  {
+    "fecha": "2026-11-07T17:38:38.293Z",
+    "sistema": "PORTAL",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "181.43.120.184",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:38:53.862Z",
+    "sistema": "AD",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.7.115",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:39:21.002Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.3.205",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:40:24.239Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "186.10.166.242",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:40:48.940Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.4.136",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:41:08.211Z",
+    "sistema": "FW-PERIM",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.3.213",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:41:08.413Z",
+    "sistema": "FW-PERIM",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.6.178",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:41:41.767Z",
+    "sistema": "BD-OPER",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.4.69",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:42:38.190Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.2.144",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:42:51.831Z",
+    "sistema": "VPN",
+    "tipo": "acceso_denegado",
+    "severidad": "media",
+    "ip": "200.83.189.206",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Intento de acceso a recurso sin permiso"
+  },
+  {
+    "fecha": "2026-11-07T17:43:23.521Z",
+    "sistema": "AD",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "186.10.159.143",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:44:02.397Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.1.231",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:44:14.932Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.5.184",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:44:49.102Z",
+    "sistema": "AD",
+    "tipo": "login_fallido",
+    "severidad": "baja",
+    "ip": "10.10.6.235",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Contraseña incorrecta"
+  },
+  {
+    "fecha": "2026-11-07T17:44:49.960Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.5.219",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:45:21.149Z",
+    "sistema": "GPS-FLOTA",
+    "tipo": "login_fallido",
+    "severidad": "baja",
+    "ip": "10.10.1.188",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Contraseña incorrecta"
+  },
+  {
+    "fecha": "2026-11-07T17:45:27.026Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "190.161.82.68",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:45:46.000Z",
+    "sistema": "VPN",
+    "tipo": "login_fallido",
+    "severidad": "baja",
+    "ip": "200.83.211.220",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Contraseña incorrecta"
+  },
+  {
+    "fecha": "2026-11-07T17:45:57.759Z",
+    "sistema": "BD-OPER",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "200.83.49.251",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:45:58.966Z",
+    "sistema": "PORTAL",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "186.10.105.178",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:46:41.065Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.7.14",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:47:10.477Z",
+    "sistema": "ERP",
+    "tipo": "acceso_denegado",
+    "severidad": "media",
+    "ip": "190.161.38.145",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Intento de acceso a recurso sin permiso"
+  },
+  {
+    "fecha": "2026-11-07T17:47:27.197Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.2.131",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:47:39.353Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.4.117",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:47:40.578Z",
+    "sistema": "AD",
+    "tipo": "login_fallido",
+    "severidad": "baja",
+    "ip": "10.30.7.206",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Contraseña incorrecta"
+  },
+  {
+    "fecha": "2026-11-07T17:48:00.145Z",
+    "sistema": "CORREO",
+    "tipo": "login_fallido",
+    "severidad": "baja",
+    "ip": "152.172.60.122",
+    "usuario": "admin@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Contraseña incorrecta"
+  },
+  {
+    "fecha": "2026-11-07T17:48:38.125Z",
+    "sistema": "FW-PERIM",
+    "tipo": "escaneo_puertos",
+    "severidad": "media",
+    "ip": "10.20.5.156",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Escaneo de puertos bloqueado"
+  },
+  {
+    "fecha": "2026-11-07T17:48:53.563Z",
+    "sistema": "GPS-FLOTA",
+    "tipo": "login_fallido",
+    "severidad": "baja",
+    "ip": "10.30.5.72",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Contraseña incorrecta"
+  },
+  {
+    "fecha": "2026-11-07T17:48:58.520Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.2.121",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:49:00.495Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.7.240",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:49:17.760Z",
+    "sistema": "FW-PERIM",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.4.38",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:49:36.493Z",
+    "sistema": "FW-PERIM",
+    "tipo": "escaneo_puertos",
+    "severidad": "media",
+    "ip": "10.30.4.222",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Escaneo de puertos bloqueado"
+  },
+  {
+    "fecha": "2026-11-07T17:50:06.409Z",
+    "sistema": "GPS-FLOTA",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.0.126",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:50:28.059Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "152.172.33.185",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:50:58.221Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.3.174",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:51:37.483Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "190.161.224.2",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:52:21.469Z",
+    "sistema": "AD",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.6.9",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:52:33.476Z",
+    "sistema": "NAS",
+    "tipo": "login_fallido",
+    "severidad": "baja",
+    "ip": "10.20.5.110",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "",
+    "mensaje": "Contraseña incorrecta"
+  },
+  {
+    "fecha": "2026-11-07T17:53:02.932Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "186.10.90.40",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:53:03.240Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.6.23",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:53:12.310Z",
+    "sistema": "GPS-FLOTA",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.7.188",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:53:13.897Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.1.89",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:53:20.311Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.2.216",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:53:24.122Z",
+    "sistema": "VPN",
+    "tipo": "conexion_vpn",
+    "severidad": "info",
+    "ip": "181.43.185.10",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Túnel VPN establecido"
+  },
+  {
+    "fecha": "2026-11-07T17:53:30.013Z",
+    "sistema": "FW-PERIM",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.6.182",
+    "usuario": "paula.araya12@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:54:14.399Z",
+    "sistema": "FW-PERIM",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.6.71",
+    "usuario": "admin@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:54:16.576Z",
+    "sistema": "WMS",
+    "tipo": "otro",
+    "severidad": "info",
+    "ip": "152.172.114.200",
+    "usuario": "javiera.rojas3@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Evento operativo"
+  },
+  {
+    "fecha": "2026-11-07T17:55:13.002Z",
+    "sistema": "CORREO",
+    "tipo": "acceso_denegado",
+    "severidad": "media",
+    "ip": "200.83.248.208",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Intento de acceso a recurso sin permiso"
+  },
+  {
+    "fecha": "2026-11-07T17:55:17.138Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "200.83.231.50",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:55:58.542Z",
+    "sistema": "GPS-FLOTA",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.2.241",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:56:01.903Z",
+    "sistema": "AD",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.7.187",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:56:54.412Z",
+    "sistema": "FW-PERIM",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.0.122",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:57:00.089Z",
+    "sistema": "CORREO",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.10.4.126",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:57:35.524Z",
+    "sistema": "NAS",
+    "tipo": "descarga_masiva",
+    "severidad": "alta",
+    "ip": "10.20.2.226",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Descarga de volumen inusual de archivos"
+  },
+  {
+    "fecha": "2026-11-07T17:57:41.426Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "152.172.177.58",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:57:48.124Z",
+    "sistema": "WMS",
+    "tipo": "acceso_denegado",
+    "severidad": "media",
+    "ip": "152.172.13.101",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Intento de acceso a recurso sin permiso"
+  },
+  {
+    "fecha": "2026-11-07T17:58:05.058Z",
+    "sistema": "VPN",
+    "tipo": "acceso_denegado",
+    "severidad": "media",
+    "ip": "181.43.87.45",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Intento de acceso a recurso sin permiso"
+  },
+  {
+    "fecha": "2026-11-07T17:58:08.715Z",
+    "sistema": "WMS",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.7.250",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:58:51.261Z",
+    "sistema": "ERP",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.20.7.67",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T17:59:32.900Z",
+    "sistema": "NAS",
+    "tipo": "descarga_masiva",
+    "severidad": "alta",
+    "ip": "10.30.0.132",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Descarga de volumen inusual de archivos"
+  },
+  {
+    "fecha": "2026-11-07T17:59:38.346Z",
+    "sistema": "VPN",
+    "tipo": "otro",
+    "severidad": "info",
+    "ip": "152.172.4.164",
+    "usuario": "tomas.silva9@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Evento operativo"
+  },
+  {
+    "fecha": "2026-11-07T18:00:42.075Z",
+    "sistema": "VPN",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "200.83.10.155",
+    "usuario": "admin@cordillera.demo",
+    "pais": "CL",
+    "mensaje": "Autenticación correcta"
+  },
+  {
+    "fecha": "2026-11-07T18:00:46.204Z",
+    "sistema": "AD",
+    "tipo": "login_ok",
+    "severidad": "info",
+    "ip": "10.30.7.96",
+    "usuario": "colaborador@cordillera.demo",
+    "pais": "",
+    "mensaje": "Autenticación correcta"
+  }
+]

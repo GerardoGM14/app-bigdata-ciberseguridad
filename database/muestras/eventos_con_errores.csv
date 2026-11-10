@@ -1,0 +1,101 @@
+fecha,sistema,tipo,severidad,ip,usuario,pais,mensaje
+2026-11-07T16:43:22.183Z,WMS,login_ok,info,10.10.0.109,tomas.silva9@cordillera.demo,,Autenticación correcta
+2026-11-07T16:43:36.781Z,PORTAL,login_ok,info,186.10.44.169,paula.araya12@cordillera.demo,CL,Autenticación correcta
+2026-11-07T16:43:50.747Z,WMS,login_ok,info,10.30.6.143,paula.araya12@cordillera.demo,,Autenticación correcta
+2026-11-07T16:43:59.398Z,VPN,conexion_vpn,info,181.43.64.19,colaborador@cordillera.demo,CL,Túnel VPN establecido
+2026-11-07T16:44:06.526Z,PORTAL,login_ok,info,190.161.159.145,paula.araya12@cordillera.demo,CL,Autenticación correcta
+2026-11-07T16:44:45.863Z,BD-OPER,otro,info,200.83.74.40,admin@cordillera.demo,CL,Evento operativo
+2026-11-07T16:44:46.544Z,VPN,otro,info,152.172.3.197,tomas.silva9@cordillera.demo,CL,Evento operativo
+2026-11-07T16:44:47.373Z,AD,login_fallido,baja,10.20.6.124,colaborador@cordillera.demo,,Contraseña incorrecta
+2026-11-07T16:44:59.855Z,VPN,login_ok,info,200.83.224.201,javiera.rojas3@cordillera.demo,CL,Autenticación correcta
+2026-11-07T16:46:14.027Z,PORTAL,login_ok,info,186.10.211.138,admin@cordillera.demo,CL,Autenticación correcta
+2026-11-07T16:46:23.776Z,WMS,login_ok,info,10.30.4.229,paula.araya12@cordillera.demo,,Autenticación correcta
+2026-11-07T16:46:36.563Z,PORTAL,login_ok,info,152.172.154.76,admin@cordillera.demo,CL,Autenticación correcta
+2026-11-07T16:46:38.582Z,CORREO,login_fallido,baja,10.10.5.30,admin@cordillera.demo,,Contraseña incorrecta
+2026-11-07T16:46:56.805Z,ERP,login_ok,info,190.161.11.138,paula.araya12@cordillera.demo,CL,Autenticación correcta
+2026-11-07T16:47:04.106Z,FW-PERIM,login_ok,info,10.20.1.122,javiera.rojas3@cordillera.demo,,Autenticación correcta
+2026-11-07T16:47:26.040Z,WMS,login_ok,info,186.10.34.220,admin@cordillera.demo,CL,Autenticación correcta
+2026-11-07T16:47:53.981Z,NAS,login_ok,info,10.10.7.161,colaborador@cordillera.demo,,Autenticación correcta
+2026-11-07T16:47:59.073Z,CORREO,otro,info,10.30.0.214,paula.araya12@cordillera.demo,,Evento operativo
+2026-11-07T16:48:28.057Z,WMS,login_ok,info,10.20.6.89,admin@cordillera.demo,,Autenticación correcta
+2026-11-07T16:48:49.125Z,ERP,acceso_denegado,media,10.20.0.22,paula.araya12@cordillera.demo,,Intento de acceso a recurso sin permiso
+2026-11-07T16:48:52.772Z,GPS-FLOTA,login_ok,info,10.10.1.69,admin@cordillera.demo,,Autenticación correcta
+2026-11-07T16:49:04.034Z,VPN,login_ok,info,190.161.184.57,tomas.silva9@cordillera.demo,CL,Autenticación correcta
+2026-11-07T16:49:50.564Z,CORREO,login_ok,info,10.30.4.131,admin@cordillera.demo,,Autenticación correcta
+2026-11-07T16:50:01.866Z,FW-PERIM,escaneo_puertos,media,10.30.4.110,paula.araya12@cordillera.demo,,Escaneo de puertos bloqueado
+2026-11-07T16:50:02.803Z,FW-PERIM,descarga_masiva,alta,10.20.2.32,javiera.rojas3@cordillera.demo,,Descarga masiva fuera de horario
+2026-11-07T16:50:03.371Z,VPN,login_ok,info,200.83.49.96,paula.araya12@cordillera.demo,CL,Autenticación correcta
+2026-11-07T16:51:12.426Z,CORREO,acceso_denegado,media,10.10.0.213,paula.araya12@cordillera.demo,,Intento de acceso a recurso sin permiso
+2026-11-07T16:51:44.308Z,CORREO,login_ok,info,10.10.0.80,tomas.silva9@cordillera.demo,,Autenticación correcta
+2026-11-07T16:52:56.446Z,WMS,otro,info,10.30.4.138,javiera.rojas3@cordillera.demo,,Evento operativo
+2026-11-07T16:53:16.127Z,AD,login_ok,info,10.30.0.124,colaborador@cordillera.demo,,Autenticación correcta
+2026-11-07T16:53:18.699Z,FW-PERIM,escaneo_puertos,alta,191.96.12.18,,BR,Escaneo externo de puertos
+2026-11-07T16:53:27.131Z,AD,login_ok,info,10.10.1.219,tomas.silva9@cordillera.demo,,Autenticación correcta
+2026-11-07T16:54:29.121Z,FW-PERIM,escaneo_puertos,media,10.10.7.161,colaborador@cordillera.demo,,Escaneo de puertos bloqueado
+2026-11-07T16:55:23.995Z,BD-OPER,login_ok,info,10.10.0.164,javiera.rojas3@cordillera.demo,,Autenticación correcta
+2026-11-07T16:56:44.135Z,CORREO,login_ok,info,10.30.1.109,tomas.silva9@cordillera.demo,,Autenticación correcta
+2026-11-07T16:57:28.856Z,CORREO,login_ok,info,10.10.4.17,javiera.rojas3@cordillera.demo,,Autenticación correcta
+2026-11-07T16:57:53.345Z,FW-PERIM,login_ok,info,10.10.5.63,admin@cordillera.demo,,Autenticación correcta
+2026-11-07T16:58:05.724Z,GPS-FLOTA,login_ok,info,10.10.4.43,paula.araya12@cordillera.demo,,Autenticación correcta
+2026-11-07T16:58:10.650Z,CORREO,login_ok,info,190.161.211.11,javiera.rojas3@cordillera.demo,CL,Autenticación correcta
+2026-11-07T16:58:29.305Z,FW-PERIM,login_ok,info,10.20.0.216,javiera.rojas3@cordillera.demo,,Autenticación correcta
+2026-11-07T16:58:36.876Z,ERP,login_ok,info,10.10.3.43,colaborador@cordillera.demo,,Autenticación correcta
+2026-11-07T16:59:03.323Z,VPN,login_ok,info,186.10.116.82,colaborador@cordillera.demo,CL,Autenticación correcta
+2026-11-07T16:59:08.412Z,FW-PERIM,escaneo_puertos,media,10.10.2.191,admin@cordillera.demo,,Escaneo de puertos bloqueado
+2026-11-07T16:59:44.517Z,ERP,login_ok,info,10.20.6.230,colaborador@cordillera.demo,,Autenticación correcta
+2026-11-07T17:00:13.730Z,ERP,login_ok,info,152.172.47.117,colaborador@cordillera.demo,CL,Autenticación correcta
+2026-11-07T17:00:30.918Z,WMS,login_fallido,baja,10.20.3.37,colaborador@cordillera.demo,,Contraseña incorrecta
+2026-11-07T17:00:49.133Z,WMS,login_ok,info,152.172.27.85,admin@cordillera.demo,CL,Autenticación correcta
+2026-11-07T17:00:49.547Z,VPN,login_ok,info,186.10.104.142,javiera.rojas3@cordillera.demo,CL,Autenticación correcta
+2026-11-07T17:01:00.205Z,AD,login_ok,info,10.30.3.61,tomas.silva9@cordillera.demo,,Autenticación correcta
+2026-11-07T17:01:00.283Z,FW-PERIM,escaneo_puertos,media,152.172.7.253,paula.araya12@cordillera.demo,CL,Escaneo de puertos bloqueado
+2026-11-07T17:01:14.697Z,ERP,login_ok,info,10.10.5.38,colaborador@cordillera.demo,,Autenticación correcta
+2026-11-07T17:01:52.886Z,VPN,login_ok,info,190.161.143.115,javiera.rojas3@cordillera.demo,CL,Autenticación correcta
+2026-11-07T17:02:01.269Z,ERP,login_ok,info,10.20.7.15,colaborador@cordillera.demo,,Autenticación correcta
+2026-11-07T17:02:19.552Z,ERP,login_ok,info,10.20.2.161,tomas.silva9@cordillera.demo,,Autenticación correcta
+2026-11-07T17:02:56.479Z,VPN,login_ok,info,190.161.17.235,paula.araya12@cordillera.demo,CL,Autenticación correcta
+2026-11-07T17:03:11.796Z,AD,login_fallido,baja,190.161.168.172,colaborador@cordillera.demo,CL,Contraseña incorrecta
+2026-11-07T17:03:45.334Z,VPN,login_ok,info,200.83.235.226,tomas.silva9@cordillera.demo,CL,Autenticación correcta
+2026-11-07T17:04:04.391Z,BD-OPER,login_ok,info,10.30.2.223,paula.araya12@cordillera.demo,,Autenticación correcta
+2026-11-07T17:04:19.151Z,FW-PERIM,login_ok,info,10.30.6.117,javiera.rojas3@cordillera.demo,,Autenticación correcta
+2026-11-07T17:04:26.139Z,PORTAL,login_ok,info,190.161.188.21,admin@cordillera.demo,CL,Autenticación correcta
+2026-11-07T17:04:33.235Z,VPN,conexion_vpn,info,200.83.190.165,colaborador@cordillera.demo,CL,Túnel VPN establecido
+2026-11-07T17:05:10.700Z,WMS,otro,info,10.20.0.196,javiera.rojas3@cordillera.demo,,Evento operativo
+2026-11-07T17:05:31.579Z,WMS,login_ok,info,10.30.0.174,javiera.rojas3@cordillera.demo,,Autenticación correcta
+2026-11-07T17:06:45.582Z,WMS,login_ok,info,152.172.30.26,javiera.rojas3@cordillera.demo,CL,Autenticación correcta
+2026-11-07T17:06:47.614Z,NAS,login_ok,info,10.30.2.90,admin@cordillera.demo,,Autenticación correcta
+2026-11-07T17:07:36.043Z,VPN,conexion_vpn,info,200.83.145.178,tomas.silva9@cordillera.demo,CL,Túnel VPN establecido
+2026-11-07T17:08:01.496Z,VPN,conexion_vpn,info,190.161.7.44,tomas.silva9@cordillera.demo,CL,Túnel VPN establecido
+2026-11-07T17:08:01.848Z,FW-PERIM,otro,info,10.10.4.158,colaborador@cordillera.demo,,Evento operativo
+2026-11-07T17:08:19.901Z,AD,login_ok,info,10.30.0.140,colaborador@cordillera.demo,,Autenticación correcta
+2026-11-07T17:08:57.240Z,AD,login_ok,info,10.30.0.229,colaborador@cordillera.demo,,Autenticación correcta
+2026-11-07T17:09:09.828Z,WMS,login_ok,info,10.20.7.154,admin@cordillera.demo,,Autenticación correcta
+2026-11-07T17:10:00.947Z,FW-PERIM,login_ok,info,10.10.7.136,tomas.silva9@cordillera.demo,,Autenticación correcta
+2026-11-07T17:10:20.779Z,FW-PERIM,escaneo_puertos,media,10.20.4.7,admin@cordillera.demo,,Escaneo de puertos bloqueado
+2026-11-07T17:11:37.147Z,WMS,login_fallido,baja,190.161.17.166,colaborador@cordillera.demo,CL,Contraseña incorrecta
+2026-11-07T17:11:47.171Z,FW-PERIM,acceso_denegado,media,10.20.7.235,admin@cordillera.demo,,Intento de acceso a recurso sin permiso
+2026-11-07T17:12:30.379Z,WMS,otro,info,10.10.0.101,tomas.silva9@cordillera.demo,,Evento operativo
+2026-11-07T17:13:09.808Z,AD,login_ok,info,10.10.3.182,javiera.rojas3@cordillera.demo,,Autenticación correcta
+2026-11-07T17:13:57.236Z,PORTAL,login_ok,info,181.43.245.94,paula.araya12@cordillera.demo,CL,Autenticación correcta
+2026-11-07T17:14:00.460Z,GPS-FLOTA,login_ok,info,10.20.6.59,admin@cordillera.demo,,Autenticación correcta
+2026-11-07T17:14:02.591Z,AD,login_ok,info,10.10.3.62,paula.araya12@cordillera.demo,,Autenticación correcta
+2026-11-07T17:14:24.598Z,ERP,login_ok,info,10.30.1.187,colaborador@cordillera.demo,,Autenticación correcta
+2026-11-07T17:14:44.041Z,ERP,login_ok,info,10.20.0.189,colaborador@cordillera.demo,,Autenticación correcta
+2026-11-07T17:15:09.531Z,WMS,login_ok,info,181.43.120.71,javiera.rojas3@cordillera.demo,CL,Autenticación correcta
+2026-11-07T17:15:11.097Z,GPS-FLOTA,login_ok,info,10.20.2.7,javiera.rojas3@cordillera.demo,,Autenticación correcta
+2026-11-07T17:15:15.249Z,ERP,login_ok,info,10.10.6.109,paula.araya12@cordillera.demo,,Autenticación correcta
+2026-11-07T17:15:37.809Z,WMS,descarga_masiva,alta,10.30.1.130,paula.araya12@cordillera.demo,,Descarga de volumen inusual de archivos
+2026-11-07T17:16:16.956Z,WMS,login_ok,info,10.30.2.61,javiera.rojas3@cordillera.demo,,Autenticación correcta
+2026-11-07T17:16:20.723Z,CORREO,login_ok,info,10.20.7.189,admin@cordillera.demo,,Autenticación correcta
+2026-11-07T17:17:19.667Z,ERP,login_ok,info,10.20.4.214,colaborador@cordillera.demo,,Autenticación correcta
+2026-11-07T17:18:09.969Z,ERP,login_ok,info,10.30.7.150,paula.araya12@cordillera.demo,,Autenticación correcta
+2026-11-07T17:18:20.851Z,PORTAL,login_ok,info,190.161.81.17,paula.araya12@cordillera.demo,CL,Autenticación correcta
+2026-11-07T17:18:28.701Z,FW-PERIM,escaneo_puertos,media,10.10.7.195,paula.araya12@cordillera.demo,,Escaneo de puertos bloqueado
+2026-11-07T17:18:41.194Z,CORREO,login_ok,info,10.30.7.66,tomas.silva9@cordillera.demo,,Autenticación correcta
+2026-11-07T17:19:26.141Z,GPS-FLOTA,login_ok,info,10.10.5.129,admin@cordillera.demo,,Autenticación correcta
+2026-11-07T17:19:26.928Z,ERP,login_ok,info,10.10.4.144,javiera.rojas3@cordillera.demo,,Autenticación correcta
+no-es-fecha,VPN,login_ok,info,10.10.1.5,demo@cordillera.demo,,Fecha inválida
+2026-11-10T16:42:40.663Z,VPN,borrar_todo,info,10.10.1.5,demo@cordillera.demo,,Tipo no reconocido
+2026-11-10T16:42:40.663Z,VPN,login_ok,info,999.1.1.1,demo@cordillera.demo,,IP inválida
+2026-11-10T16:42:40.663Z,"VPN; DROP",login_ok,info,10.0.0.1,demo@cordillera.demo,,Sistema inválido
+2026-11-13T16:42:40.663Z,ERP,login_ok,info,10.0.0.1,demo@cordillera.demo,,Fecha futura
