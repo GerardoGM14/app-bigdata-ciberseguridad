@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Administración · Centinela</title>
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="lateral" aria-label="Menú principal">
+      <a class="logo" href="#dashboard"><img class="logo__icono" src="/img/logo.svg" alt=""> Centinela</a>
+      <ul class="menu">
+        <li class="menu__titulo">Análisis</li>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#eventos">Explorador de eventos</a></li>
+        <li><a href="#carga">Carga masiva</a></li>
+        <li class="menu__titulo">Gestión</li>
+        <li><a href="#incidentes">Incidentes <span class="contador" id="c-inc" hidden></span></a></li>
+        <li><a href="#solicitudes">Solicitudes de acceso <span class="contador" id="c-sol" hidden></span></a></li>
+        <li><a href="#activos">Activos</a></li>
+        <li class="menu__titulo">Seguridad</li>
+        <li><a href="#usuarios">Usuarios y roles</a></li>
+        <li><a href="#auditoria">Auditoría</a></li>
+        <li><a href="/perfil.html">Mi perfil</a></li>
+      </ul>
+      <div class="lateral__pie"><strong data-usuario-nombre></strong><span data-usuario-rol></span></div>
+    </aside>
+
+    <div class="principal">
+      <header class="barra">
+        <button class="btn btn--sec btn--chico barra__menu" type="button" aria-expanded="false" aria-label="Abrir menú">☰</button>
+        <h1 data-titulo>Dashboard</h1>
+        <div class="barra__acciones">
+          <span class="usuario-nombre ayuda" data-usuario-nombre></span>
+          <button class="btn btn--sec btn--chico" type="button" data-salir>Cerrar sesión</button>
+        </div>
+      </header>
+
+      <main class="contenido">
+        <!-- DASHBOARD -->
+        <section data-vista="dashboard" data-nombre="Dashboard" hidden>
+          <div class="rejilla">
+            <div class="tarjeta__cabecera">
+              <p class="ayuda" id="d-rango">Resumen de los eventos de seguridad de todos los sistemas.</p>
+              <div class="filtros">
+                <div class="campo">
+                  <label for="d-dias">Período</label>
+                  <select id="d-dias">
+                    <option value="1">Últimas 24 horas</option>
+                    <option value="7" selected>Últimos 7 días</option>
+                    <option value="30">Últimos 30 días</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><div class="kpi__valor" id="k-total">–</div><div class="kpi__etiqueta">Eventos analizados</div></div>
+              <div class="kpi kpi--peligro"><div class="kpi__valor" id="k-fallidos">–</div><div class="kpi__etiqueta">Logins fallidos</div></div>
+              <div class="kpi kpi--alerta"><div class="kpi__valor" id="k-graves">–</div><div class="kpi__etiqueta">Severidad alta o crítica</div></div>
+              <div class="kpi"><div class="kpi__valor" id="k-ips">–</div><div class="kpi__etiqueta">IP de origen distintas</div></div>
+              <div class="kpi kpi--alerta"><div class="kpi__valor" id="k-inc">–</div><div class="kpi__etiqueta">Incidentes en curso</div></div>
+              <div class="kpi kpi--ok"><div class="kpi__valor" id="k-sol">–</div><div class="kpi__etiqueta">Solicitudes pendientes</div></div>
+            </div>
+            <div class="rejilla rejilla--3">
+              <div class="tarjeta">
+                <div class="tarjeta__cabecera"><h3>Actividad en el tiempo</h3><span class="ayuda">Logins fallidos vs. resto de eventos</span></div>
+                <div class="grafico"><canvas id="g-serie" aria-label="Gráfico de eventos en el tiempo" role="img"></canvas></div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta__cabecera"><h3>Por severidad</h3></div>
+                <div class="grafico"><canvas id="g-severidad" aria-label="Gráfico por severidad" role="img"></canvas></div>
+              </div>
+            </div>
+            <div class="rejilla rejilla--2">
+              <div class="tarjeta">
+                <div class="tarjeta__cabecera"><h3>Eventos por sistema</h3></div>
+                <div class="grafico grafico--chico"><canvas id="g-sistema" aria-label="Gráfico por sistema" role="img"></canvas></div>
+              </div>
+              <div class="tarjeta">
+                <div class="tarjeta__cabecera"><h3>Eventos por tipo</h3></div>
+                <div class="grafico grafico--chico"><canvas id="g-tipo" aria-label="Gráfico por tipo" role="img"></canvas></div>
+              </div>
+            </div>
+            <div class="tarjeta">
+              <div class="tarjeta__cabecera">
+                <div><h3>Alertas de fuerza bruta y password spraying</h3>
+                  <p class="ayuda">IP con 5 o más intentos fallidos dentro de una ventana de 10 minutos (últimos 7 días).</p></div>
+              </div>
+              <div class="tabla-envoltura">
+                <table class="tabla-responsive" id="t-alertas">
+                  <thead><tr><th>IP de origen</th><th>País</th><th>Patrón</th><th>Riesgo</th><th>Intentos</th><th>Cuentas atacadas</th><th>Sistemas</th><th>Último intento</th><th></th></tr></thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- EXPLORADOR DE EVENTOS -->
+        <section data-vista="eventos" data-nombre="Explorador de eventos" hidden>
+          <div class="tarjeta">
+            <form class="filtros" id="f-eventos" novalidate>
+              <div class="campo"><label for="e-desde">Desde</label><input id="e-desde" name="desde" type="datetime-local"></div>
+              <div class="campo"><label for="e-hasta">Hasta</label><input id="e-hasta" name="hasta" type="datetime-local"></div>
+              <div class="campo"><label for="e-sistema">Sistema</label><select id="e-sistema" name="sistema"></select></div>
+              <div class="campo"><label for="e-tipo">Tipo</label><select id="e-tipo" name="tipo"></select></div>
+              <div class="campo"><label for="e-severidad">Severidad</label>
+                <select id="e-severidad" name="severidad"><option value="">Todas</option><option value="info">Info</option><option value="baja">Baja</option><option value="media">Media</option><option value="alta">Alta</option><option value="critica">Crítica</option></select></div>
+              <div class="campo"><label for="e-ip">IP</label><input id="e-ip" name="ip" maxlength="45" placeholder="Ej.: 45.155.205.233"></div>
+              <div class="campo"><label for="e-usuario">Usuario</label><input id="e-usuario" name="usuario" maxlength="60" placeholder="Comienza con…"></div>
+              <button class="btn" type="submit">Filtrar</button>
+              <button class="btn btn--sec" type="reset">Limpiar</button>
+            </form>
+          </div>
+          <div class="tarjeta">
+            <div class="tabla-envoltura">
+              <table class="tabla-responsive" id="t-eventos">
+                <thead><tr><th>Fecha</th><th>Sistema</th><th>Tipo</th><th>Severidad</th><th>IP</th><th>País</th><th>Usuario</th><th>Mensaje</th></tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <div class="paginacion" id="p-eventos"></div>
+          </div>
+        </section>
+
+        <!-- Formulario 3: CARGA MASIVA -->
+        <section data-vista="carga" data-nombre="Carga masiva de eventos" hidden>
+          <div class="rejilla rejilla--3">
+            <div class="tarjeta">
+              <div class="tarjeta__cabecera"><div><h2>Importar eventos desde archivo</h2><p class="ayuda">CSV (separado por coma o punto y coma) o JSON. Máximo 8 MB y 50.000 filas.</p></div></div>
+              <form class="form" id="form-carga" novalidate>
+                <div class="aviso" role="alert"></div>
+                <label class="zona-carga" id="zona-carga" for="archivo">
+                  <input id="archivo" name="archivo" type="file" accept=".csv,.json,text/csv,application/json">
+                  <strong id="zona-texto">Arrastra el archivo aquí o haz clic para elegirlo</strong>
+                  <span class="ayuda">Exportaciones de VPN, firewall, correo, ERP…</span>
+                </label>
+                <div class="progreso" hidden id="progreso"><span></span></div>
+                <div><button class="btn" type="submit">Procesar archivo</button></div>
+              </form>
+              <div id="resultado-carga"></div>
+            </div>
+            <div class="tarjeta">
+              <h3>Formato esperado</h3>
+              <p class="ayuda">Columnas en la primera fila:</p>
+              <p class="mono">fecha, sistema, tipo, severidad, ip, usuario, pais, mensaje</p>
+              <dl class="datos">
+                <dt>fecha</dt><dd>ISO 8601 (2026-11-10T08:15:00Z)</dd>
+                <dt>sistema</dt><dd>Código del activo (VPN, ERP…)</dd>
+                <dt>tipo</dt><dd>login_ok, login_fallido, acceso_denegado, cambio_privilegios, malware_detectado, conexion_vpn, descarga_masiva, escaneo_puertos, otro</dd>
+                <dt>severidad</dt><dd>info, baja, media, alta, critica</dd>
+                <dt>pais</dt><dd>Código ISO de 2 letras</dd>
+              </dl>
+              <p class="ayuda">Las filas con errores se rechazan una a una; el resto se inserta en lotes de 1.000.</p>
+              <h3>Ingesta automática (API)</h3>
+              <p class="ayuda">Los sistemas pueden enviar eventos con <span class="mono">POST /api/eventos/ingesta</span> y la cabecera <span class="mono">X-API-Key</span>.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- INCIDENTES -->
+        <section data-vista="incidentes" data-nombre="Gestión de incidentes" hidden>
+          <div class="tarjeta">
+            <form class="filtros" id="f-incidentes" novalidate>
+              <div class="campo"><label for="fi-q">Buscar</label><input id="fi-q" name="q" maxlength="60" placeholder="Folio o título"></div>
+              <div class="campo"><label for="fi-estado">Estado</label>
+                <select id="fi-estado" name="estado"><option value="">Todos</option><option value="abierto">Abierto</option><option value="en_analisis">En análisis</option><option value="resuelto">Resuelto</option><option value="cerrado">Cerrado</option></select></div>
+              <div class="campo"><label for="fi-sev">Severidad</label>
+                <select id="fi-sev" name="severidad"><option value="">Todas</option><option value="baja">Baja</option><option value="media">Media</option><option value="alta">Alta</option><option value="critica">Crítica</option></select></div>
+              <button class="btn" type="submit">Filtrar</button>
+            </form>
+          </div>
+          <div class="tarjeta">
+            <div class="tabla-envoltura">
+              <table class="tabla-responsive" id="t-incidentes">
+                <thead><tr><th>Folio</th><th>Título</th><th>Tipo</th><th>Severidad</th><th>Estado</th><th>Reportado por</th><th>Responsable</th><th>Fecha</th><th></th></tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <div class="paginacion" id="p-incidentes"></div>
+          </div>
+        </section>
+
+        <!-- SOLICITUDES -->
+        <section data-vista="solicitudes" data-nombre="Solicitudes de acceso" hidden>
+          <div class="tarjeta">
+            <div class="tarjeta__cabecera">
+              <h2>Solicitudes</h2>
+              <div class="filtros"><div class="campo"><label for="fs-estado">Estado</label>
+                <select id="fs-estado"><option value="pendiente">Pendientes</option><option value="aprobada">Aprobadas</option><option value="rechazada">Rechazadas</option><option value="">Todas</option></select></div></div>
+            </div>
+            <div class="tabla-envoltura">
+              <table class="tabla-responsive" id="t-solicitudes">
+                <thead><tr><th>Solicitante</th><th>Área</th><th>Sistema</th><th>Nivel</th><th>Justificación</th><th>Estado</th><th>Fecha</th><th>Acción</th></tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- ACTIVOS -->
+        <section data-vista="activos" data-nombre="Activos de información" hidden>
+          <div class="rejilla rejilla--3">
+            <div class="tarjeta">
+              <div class="tarjeta__cabecera"><h2>Inventario</h2></div>
+              <div class="tabla-envoltura">
+                <table class="tabla-responsive" id="t-activos">
+                  <thead><tr><th>Código</th><th>Nombre</th><th>Tipo</th><th>Criticidad</th><th>Responsable</th><th>Estado</th><th></th></tr></thead>
+                  <tbody></tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tarjeta">
+              <div class="tarjeta__cabecera"><h2 id="activo-titulo">Nuevo activo</h2></div>
+              <form class="form" id="form-activo" novalidate>
+                <div class="aviso" role="alert"></div>
+                <input type="hidden" name="id">
+                <div class="campo"><label for="a-codigo">Código</label><input id="a-codigo" name="codigo" required pattern="[A-Za-z0-9_\-]{2,20}" maxlength="20" placeholder="Ej.: CRM" data-msg="2 a 20 caracteres: letras, números, - o _"></div>
+                <div class="campo"><label for="a-nombre">Nombre</label><input id="a-nombre" name="nombre" required minlength="3" maxlength="80" data-msg="Entre 3 y 80 caracteres"></div>
+                <div class="campo"><label for="a-tipo">Tipo</label>
+                  <select id="a-tipo" name="tipo" required data-msg="Selecciona el tipo"><option value="">Selecciona</option><option value="aplicacion">Aplicación</option><option value="servidor">Servidor</option><option value="red">Red</option><option value="base_datos">Base de datos</option><option value="endpoint">Equipo</option><option value="nube">Nube</option></select></div>
+                <div class="campo"><label for="a-criticidad">Criticidad</label>
+                  <select id="a-criticidad" name="criticidad" required><option value="baja">Baja</option><option value="media" selected>Media</option><option value="alta">Alta</option><option value="critica">Crítica</option></select></div>
+                <div class="campo"><label for="a-ubicacion">Ubicación <span class="opcional">(opcional)</span></label><input id="a-ubicacion" name="ubicacion" maxlength="80"></div>
+                <div class="campo"><label for="a-responsable">Responsable <span class="opcional">(opcional)</span></label><select id="a-responsable" name="responsable"></select></div>
+                <div class="campo"><label for="a-descripcion">Descripción <span class="opcional">(opcional)</span></label><textarea id="a-descripcion" name="descripcion" maxlength="400"></textarea></div>
+                <div class="filtros"><button class="btn" type="submit">Guardar</button><button class="btn btn--sec" type="button" id="a-cancelar" hidden>Cancelar edición</button></div>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <!-- USUARIOS -->
+        <section data-vista="usuarios" data-nombre="Usuarios y roles" hidden>
+          <div class="tarjeta">
+            <div class="tarjeta__cabecera">
+              <div><h2>Cuentas de usuario</h2><p class="ayuda">Cambiar el rol o desactivar una cuenta cierra sus sesiones abiertas.</p></div>
+              <form class="filtros" id="f-usuarios" novalidate>
+                <div class="campo"><label for="u-q">Buscar</label><input id="u-q" name="q" maxlength="60" placeholder="Nombre o correo"></div>
+                <button class="btn" type="submit">Buscar</button>
+              </form>
+            </div>
+            <div class="tabla-envoltura">
+              <table class="tabla-responsive" id="t-usuarios">
+                <thead><tr><th>Nombre</th><th>Correo</th><th>Área</th><th>Rol</th><th>Estado</th><th>Último acceso</th><th>Acciones</th></tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- AUDITORÍA -->
+        <section data-vista="auditoria" data-nombre="Bitácora de auditoría" hidden>
+          <div class="tarjeta">
+            <div class="tarjeta__cabecera">
+              <div><h2>Acciones registradas en la plataforma</h2><p class="ayuda">Registro de solo lectura: no puede modificarse desde la aplicación.</p></div>
+              <div class="filtros"><div class="campo"><label for="au-accion">Acción</label><select id="au-accion"></select></div></div>
+            </div>
+            <div class="tabla-envoltura">
+              <table class="tabla-responsive" id="t-auditoria">
+                <thead><tr><th>Fecha</th><th>Usuario</th><th>Acción</th><th>Detalle</th><th>IP</th></tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <div class="paginacion" id="p-auditoria"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <dialog id="dialogo">
+    <div class="dialogo__cabecera"><h2 id="dialogo-titulo"></h2><button class="dialogo__cerrar" type="button" aria-label="Cerrar">×</button></div>
+    <div class="dialogo__cuerpo" id="dialogo-cuerpo"></div>
+  </dialog>
+
+  <script src="/vendor/chart.umd.js"></script>
+  <script src="/js/comun.js"></script>
+  <script src="/js/admin.js"></script>
+</body>
+</html>
