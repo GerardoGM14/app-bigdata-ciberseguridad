@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recuperar contraseña · Centinela</title>
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <main class="auth">
+    <section class="auth__marca" aria-label="Presentación">
+      <a class="logo" href="/index.html"><img class="logo__icono" src="/img/logo.svg" alt=""> Centinela</a>
+      <div>
+        <h1>Recupera el acceso a tu cuenta</h1>
+        <p>Te enviaremos un enlace de un solo uso, válido por 30 minutos. Si no lo solicitaste tú, ignora el correo: tu contraseña actual seguirá funcionando.</p>
+      </div>
+      <p class="auth__pie">Transportes Cordillera SpA · Seguridad TI</p>
+    </section>
+    <section class="auth__panel">
+      <div class="auth__caja">
+        <h2>¿Olvidaste tu contraseña?</h2>
+        <p class="sub">Escribe el correo con el que te registraste.</p>
+        <form class="form" id="form-recuperar" data-form="recuperar" novalidate>
+          <div class="aviso" role="alert"></div>
+          <div class="campo">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" required maxlength="120" autocomplete="email" data-msg="Ingresa un correo válido">
+          </div>
+          <button class="btn btn--bloque" type="submit">Enviar enlace</button>
+        </form>
+        <div class="enlaces"><a href="/index.html">← Volver a iniciar sesión</a></div>
+      </div>
+    </section>
+  </main>
+  <script src="/js/comun.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión · Centinela</title>
+  <meta name="description" content="Centinela: monitoreo y análisis de eventos de seguridad de Transportes Cordillera SpA">
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <main class="auth">
+    <section class="auth__marca" aria-label="Presentación">
+      <a class="logo" href="/index.html"><img class="logo__icono" src="/img/logo.svg" alt=""> Centinela</a>
+      <div>
+        <h1>Seguridad de la información con datos, no con intuición</h1>
+        <p>Plataforma de Transportes Cordillera SpA para centralizar los eventos de seguridad de todos sus sistemas, detectar ataques a tiempo y gestionar incidentes y accesos.</p>
+        <ul class="auth__lista">
+          <li>Análisis de miles de eventos de VPN, ERP, correo y firewall en segundos</li>
+          <li>Detección automática de fuerza bruta y password spraying</li>
+          <li>Reporte de incidentes y solicitudes de acceso con trazabilidad completa</li>
+        </ul>
+      </div>
+      <p class="auth__pie">Acceso exclusivo para personal autorizado. Toda actividad queda registrada.</p>
+    </section>
+
+    <section class="auth__panel">
+      <div class="auth__caja">
+        <h2>Iniciar sesión</h2>
+        <p class="sub">Ingresa con tu correo corporativo.</p>
+        <form class="form" id="form-login" data-form="login" novalidate>
+          <div class="aviso" role="alert"></div>
+          <div class="campo">
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" autocomplete="username" required maxlength="120" data-msg="Ingresa un correo válido">
+          </div>
+          <div class="campo">
+            <label for="password">Contraseña</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required maxlength="72" data-msg="Ingresa tu contraseña">
+          </div>
+          <button class="btn btn--bloque" type="submit">Ingresar</button>
+        </form>
+        <div class="enlaces">
+          <a href="/recuperar.html">¿Olvidaste tu contraseña?</a>
+          <a href="/registro.html">Crear cuenta</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="/js/comun.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>

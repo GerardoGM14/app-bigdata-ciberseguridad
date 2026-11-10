@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Nueva contraseña · Centinela</title>
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <main class="auth">
+    <section class="auth__marca" aria-label="Presentación">
+      <a class="logo" href="/index.html"><img class="logo__icono" src="/img/logo.svg" alt=""> Centinela</a>
+      <div>
+        <h1>Define una nueva contraseña</h1>
+        <p>Elige una contraseña que no uses en otros sitios. Al guardarla, se cerrarán las sesiones abiertas en otros equipos.</p>
+      </div>
+      <p class="auth__pie">Transportes Cordillera SpA · Seguridad TI</p>
+    </section>
+    <section class="auth__panel">
+      <div class="auth__caja">
+        <h2>Nueva contraseña</h2>
+        <p class="sub">El enlace solo puede usarse una vez.</p>
+        <form class="form" id="form-restablecer" data-form="restablecer" novalidate>
+          <div class="aviso" role="alert"></div>
+          <input type="hidden" name="token">
+          <div class="campo">
+            <label for="password">Nueva contraseña</label>
+            <input id="password" name="password" type="password" required autocomplete="new-password" maxlength="72" data-regla="password">
+          </div>
+          <div class="campo">
+            <label for="confirmacion">Repite la contraseña</label>
+            <input id="confirmacion" name="confirmacion" type="password" required autocomplete="new-password" maxlength="72" data-igual-a="password" data-msg="Repite la contraseña">
+          </div>
+          <button class="btn btn--bloque" type="submit">Guardar contraseña</button>
+        </form>
+        <div class="enlaces"><a href="/index.html">← Volver a iniciar sesión</a></div>
+      </div>
+    </section>
+  </main>
+  <script src="/js/comun.js"></script>
+  <script src="/js/auth.js"></script>
+</body>
+</html>
