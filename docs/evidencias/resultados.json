@@ -1,0 +1,108 @@
+{
+  "fecha": "2026-11-10T17:22:37.559Z",
+  "base": "http://localhost:3000",
+  "resultados": [
+    {
+      "id": "CP-01",
+      "nombre": "Registro de usuario con datos válidos",
+      "resultado": "Aprobado",
+      "obtenido": "Redirige al login con el mensaje \"Cuenta creada. Ya puedes iniciar sesión.\""
+    },
+    {
+      "id": "CP-02",
+      "nombre": "Registro rechazado por datos inválidos y contraseña débil",
+      "resultado": "Aprobado",
+      "obtenido": "4 campos marcados en el navegador; la API responde 422 si se salta la validación del cliente"
+    },
+    {
+      "id": "CP-03",
+      "nombre": "Inicio de sesión correcto y redirección según perfil",
+      "resultado": "Aprobado",
+      "obtenido": "Colaborador redirigido a panel.html; cookie de sesión httpOnly=true, SameSite=Strict"
+    },
+    {
+      "id": "CP-04",
+      "nombre": "Inicio de sesión con contraseña incorrecta",
+      "resultado": "Aprobado",
+      "obtenido": "Mensaje genérico: \"Correo o contraseña incorrectos\" (no revela si el correo existe)"
+    },
+    {
+      "id": "CP-05",
+      "nombre": "Bloqueo temporal de la cuenta tras 5 intentos fallidos",
+      "resultado": "Aprobado",
+      "obtenido": "Al sexto intento: \"Cuenta bloqueada temporalmente por intentos fallidos. Intenta en 15 min.\""
+    },
+    {
+      "id": "CP-06",
+      "nombre": "Recuperación de contraseña por correo electrónico",
+      "resultado": "Aprobado",
+      "obtenido": "\"Si el correo está registrado, recibirás un enlace para restablecer la contraseña.\"; enlace recibido, contraseña cambiada, ingreso con la nueva clave correcto; reutilizar el enlace responde 400"
+    },
+    {
+      "id": "CP-07",
+      "nombre": "Control de acceso: colaborador no puede usar funciones de administrador",
+      "resultado": "Aprobado",
+      "obtenido": "admin.html redirige a panel.html; /api/usuarios → 403, /api/eventos → 403, /api/analitica/resumen → 403, /api/auditoria → 403; PATCH rol → 403"
+    },
+    {
+      "id": "CP-08",
+      "nombre": "Formulario 1: reportar incidente de seguridad",
+      "resultado": "Aprobado",
+      "obtenido": "Incidente creado con folio INC-20261110-BBA8 y visible en \"Mis incidentes\""
+    },
+    {
+      "id": "CP-09",
+      "nombre": "Formulario 2: solicitud de acceso y aprobación por el administrador",
+      "resultado": "Aprobado",
+      "obtenido": "Solicitud creada en estado \"Pendiente\"; tras la aprobación el colaborador la ve \"Aprobada\""
+    },
+    {
+      "id": "CP-10",
+      "nombre": "Formulario 3: carga masiva de eventos con filas inválidas",
+      "resultado": "Aprobado",
+      "obtenido": "Filas leídas 100, insertadas 95, rechazadas 5 con el motivo de cada rechazo"
+    },
+    {
+      "id": "CP-11",
+      "nombre": "Dashboard analítico y detección de fuerza bruta",
+      "resultado": "Aprobado",
+      "obtenido": "15.792 eventos resumidos en 4 gráficos; 5 IP marcadas como fuerza bruta o password spraying"
+    },
+    {
+      "id": "CP-12",
+      "nombre": "Protección contra inyección NoSQL",
+      "resultado": "Aprobado",
+      "obtenido": "Login con operadores {$ne}/{$gt} → 422/422 \"Hay datos inválidos en el formulario\"; búsqueda con expresión regular maliciosa → 200 sin resultados"
+    },
+    {
+      "id": "CP-13",
+      "nombre": "Protección contra XSS en datos ingresados por usuarios",
+      "resultado": "Aprobado",
+      "obtenido": "El título se muestra como texto (\"<img src=x onerror=alert(1)> prueba\"), no se ejecuta script; CSP activa: default-src 'self'…"
+    },
+    {
+      "id": "CP-14",
+      "nombre": "Gestión de incidente por el administrador (estado e historial)",
+      "resultado": "Aprobado",
+      "obtenido": "Estado cambiado a \"En análisis\", responsable asignado y 2 registros en el historial"
+    },
+    {
+      "id": "CP-15",
+      "nombre": "Cambio de contraseña desde el perfil",
+      "resultado": "Aprobado",
+      "obtenido": "Con clave actual errónea: \"La contraseña actual no es correcta\"; con la correcta: \"Contraseña actualizada correctamente\""
+    },
+    {
+      "id": "CP-16",
+      "nombre": "Diseño responsive en teléfono (390 px)",
+      "resultado": "Aprobado",
+      "obtenido": "Sin desplazamiento horizontal; menú lateral se convierte en panel desplegable; tablas se muestran como tarjetas"
+    },
+    {
+      "id": "CP-17",
+      "nombre": "Contraseñas almacenadas cifradas con bcrypt",
+      "resultado": "Aprobado",
+      "obtenido": "Los 4 usuarios consultados tienen hash bcrypt (prefijo $2a$, costo 10-12); ninguna contraseña en texto plano"
+    }
+  ]
+}
