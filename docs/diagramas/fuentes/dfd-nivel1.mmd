@@ -1,0 +1,56 @@
+flowchart LR
+  col["Colaborador"]
+  adm["Administrador"]
+  sis["Sistemas de<br/>la empresa"]
+  cor["Servicio de<br/>correo"]
+
+  p1(["1.0<br/>Autenticar y<br/>gestionar cuentas"])
+  p2(["2.0<br/>Registrar y gestionar<br/>incidentes"])
+  p3(["3.0<br/>Gestionar solicitudes<br/>de acceso"])
+  p4(["4.0<br/>Ingerir eventos<br/>de seguridad"])
+  p5(["5.0<br/>Analizar eventos y<br/>detectar ataques"])
+  p6(["6.0<br/>Registrar<br/>auditoría"])
+
+  d1[["D1 usuarios"]]
+  d2[["D2 incidentes"]]
+  d3[["D3 solicitudes_acceso"]]
+  d4[["D4 eventos"]]
+  d5[["D5 activos"]]
+  d6[["D6 auditoria"]]
+  d7[["D7 tokens_recuperacion"]]
+
+  col -- "credenciales / datos de registro" --> p1
+  adm -- "credenciales / cambios de rol" --> p1
+  p1 <--> d1
+  p1 <--> d7
+  p1 -- "enlace de recuperación" --> cor
+  p1 -- "intentos de acceso" --> d4
+
+  col -- "reporte de incidente" --> p2
+  adm -- "estado, responsable, comentario" --> p2
+  p2 <--> d2
+  d5 -- "catálogo de activos" --> p2
+
+  col -- "solicitud de acceso" --> p3
+  adm -- "aprobación / rechazo" --> p3
+  p3 <--> d3
+  d5 --> p3
+
+  sis -- "logs vía API" --> p4
+  adm -- "archivo CSV / JSON" --> p4
+  p4 -- "eventos válidos" --> d4
+  p4 -- "filas rechazadas" --> adm
+
+  d4 -- "eventos por rango de tiempo" --> p5
+  p5 -- "indicadores y alertas" --> adm
+
+  p1 & p2 & p3 & p4 -- "acciones" --> p6
+  p6 --> d6
+  d6 -- "bitácora" --> adm
+
+  classDef ent fill:#eef4fd,stroke:#2f6fb5,color:#10304f
+  classDef proc fill:#ffffff,stroke:#0f6cbd,color:#10304f,stroke-width:2px
+  classDef alm fill:#e3f5ef,stroke:#14a38b,color:#0b3d33
+  class col,adm,sis,cor ent
+  class p1,p2,p3,p4,p5,p6 proc
+  class d1,d2,d3,d4,d5,d6,d7 alm

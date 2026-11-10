@@ -1,0 +1,36 @@
+flowchart LR
+  subgraph L1["Colaborador"]
+    direction LR
+    s((" ")) --> a1("Selecciona sistema<br/>y nivel de acceso")
+    a1 --> a2("Escribe justificación<br/>y envía")
+    a8("Recibe respuesta<br/>en Mis solicitudes")
+  end
+  subgraph L2["Centinela (sistema)"]
+    direction LR
+    b1{"¿Tiene otra solicitud<br/>pendiente al mismo<br/>sistema?"}
+    b1 -- "Sí" --> b2("Rechaza duplicado<br/>(409)")
+    b1 -- "No" --> b3("Registra solicitud<br/>pendiente")
+    b5("Guarda decisión,<br/>revisor y fecha")
+  end
+  subgraph L3["Administrador"]
+    direction LR
+    c1("Revisa solicitud<br/>y criticidad del activo") --> c2{"¿Corresponde a<br/>sus funciones?"}
+    c2 -- "Sí" --> c3("Aprueba con<br/>comentario")
+    c2 -- "No" --> c4("Rechaza con<br/>comentario")
+  end
+  a2 --> b1
+  b2 --> a1
+  b3 --> c1
+  c3 --> b5
+  c4 --> b5
+  b5 --> a8
+  a8 --> e((("Fin")))
+
+  classDef ev fill:#e7f6ee,stroke:#1a7f4b,color:#17663d
+  classDef fin fill:#fde8e6,stroke:#c0392b,color:#a32b1d,stroke-width:3px
+  classDef tarea fill:#ffffff,stroke:#0f6cbd,color:#10304f
+  classDef comp fill:#fdf3e1,stroke:#b7791f,color:#5a3b06
+  class s ev
+  class e fin
+  class a1,a2,a8,b2,b3,b5,c1,c3,c4 tarea
+  class b1,c2 comp

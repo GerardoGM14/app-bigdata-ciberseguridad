@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mockups Centinela</title>
+<style>
+  body { margin: 0; padding: 24px; background: #fff; font-family: "Comic Sans MS", "Segoe Print", Arial, sans-serif; color: #333; }
+  .marco { border: 2px solid #555; border-radius: 10px; background: #fafafa; margin-bottom: 40px; overflow: hidden; display: inline-block; vertical-align: top; }
+  .chrome { background: #e4e4e4; border-bottom: 2px solid #555; padding: 6px 12px; font-size: 12px; display: flex; gap: 6px; align-items: center; }
+  .chrome i { width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid #555; display: inline-block; }
+  .chrome span { margin-left: 12px; background: #fff; border: 1.5px solid #888; border-radius: 4px; padding: 1px 10px; flex: 1; }
+  .caja { border: 2px solid #777; border-radius: 6px; background: #fff; padding: 10px; }
+  .gris { background: #ddd; border: 2px solid #999; border-radius: 4px; }
+  .x { position: relative; background: #eee; border: 2px solid #999; }
+  .x::before, .x::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top right, transparent calc(50% - 1px), #aaa, transparent calc(50% + 1px)); }
+  .x::after { background: linear-gradient(to top left, transparent calc(50% - 1px), #aaa, transparent calc(50% + 1px)); }
+  .input { border: 2px solid #888; border-radius: 4px; height: 30px; background: #fff; margin: 4px 0 12px; }
+  .lbl { font-size: 13px; font-weight: bold; }
+  .btn { background: #777; color: #fff; border-radius: 5px; text-align: center; padding: 8px 14px; font-size: 13px; display: inline-block; }
+  .btn2 { border: 2px solid #777; border-radius: 5px; text-align: center; padding: 6px 12px; font-size: 13px; display: inline-block; }
+  .nota { font-size: 12px; color: #c0392b; border: 1.5px dashed #c0392b; padding: 4px 8px; border-radius: 4px; background: #fff7f5; }
+  .fila { display: flex; gap: 12px; }
+  .lineas div { height: 8px; background: #ccc; border-radius: 4px; margin: 6px 0; }
+  .menu div { height: 28px; border-bottom: 1.5px solid #888; font-size: 13px; line-height: 28px; color: #eee; padding-left: 8px; }
+  h3 { margin: 0 0 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+
+<!-- 1. Login -->
+<div class="marco" id="m-login" style="width:900px">
+  <div class="chrome"><i></i><i></i><i></i><span>centinela.onrender.com/index.html</span></div>
+  <div class="fila" style="height:440px;gap:0">
+    <div style="flex:1.3;background:#bbb;padding:28px;display:flex;flex-direction:column;justify-content:space-between">
+      <div class="fila" style="align-items:center"><div class="x" style="width:34px;height:34px"></div><b>Centinela</b></div>
+      <div><div style="font-size:26px;font-weight:bold;width:70%">Mensaje principal de la plataforma</div>
+        <div class="lineas" style="width:75%"><div></div><div></div><div style="width:60%"></div></div>
+        <div class="lineas" style="width:80%;margin-top:18px"><div>•</div><div></div><div></div></div></div>
+      <div class="lineas" style="width:50%"><div></div></div>
+    </div>
+    <div style="flex:1;padding:60px 40px">
+      <h3>Iniciar sesión</h3>
+      <div class="lineas" style="width:60%"><div></div></div>
+      <div class="lbl" style="margin-top:16px">Correo electrónico</div><div class="input"></div>
+      <div class="lbl">Contraseña</div><div class="input"></div>
+      <div class="btn" style="display:block">Ingresar</div>
+      <div class="fila" style="justify-content:space-between;font-size:12px;margin-top:12px;text-decoration:underline"><span>¿Olvidaste tu contraseña?</span><span>Crear cuenta</span></div>
+      <div class="nota" style="margin-top:22px">Mensaje de error genérico: no indicar si el correo existe</div>
+    </div>
+  </div>
+</div>
+
+<!-- 2. Dashboard admin -->
+<div class="marco" id="m-dashboard" style="width:1000px">
+  <div class="chrome"><i></i><i></i><i></i><span>centinela.onrender.com/admin.html#dashboard</span></div>
+  <div class="fila" style="gap:0;height:650px">
+    <div class="menu" style="width:170px;background:#666;padding:12px 8px">
+      <div style="border:0;font-weight:bold">▣ Centinela</div><div>Dashboard</div><div>Explorador de eventos</div><div>Carga masiva</div><div>Incidentes (3)</div><div>Solicitudes (5)</div><div>Activos</div><div>Usuarios y roles</div><div>Auditoría</div><div>Mi perfil</div>
+    </div>
+    <div style="flex:1;padding:14px">
+      <div class="fila" style="justify-content:space-between;align-items:center;border-bottom:2px solid #999;padding-bottom:8px"><b>Dashboard</b><span class="btn2">Período: 7 días ▾</span><span class="btn2">Cerrar sesión</span></div>
+      <div class="fila" style="margin:12px 0">
+        <div class="caja" style="flex:1"><b>14.467</b><br><small>Eventos</small></div>
+        <div class="caja" style="flex:1"><b>2.337</b><br><small>Fallidos</small></div>
+        <div class="caja" style="flex:1"><b>1.781</b><br><small>Graves</small></div>
+        <div class="caja" style="flex:1"><b>6</b><br><small>Incidentes</small></div>
+        <div class="caja" style="flex:1"><b>5</b><br><small>Solicitudes</small></div>
+      </div>
+      <div class="fila">
+        <div class="caja" style="flex:2;height:170px"><small>Gráfico de barras: eventos por día (fallidos vs otros)</small>
+          <div class="fila" style="align-items:flex-end;height:120px;gap:10px;margin-top:8px">
+            <div class="gris" style="height:60%;flex:1"></div><div class="gris" style="height:85%;flex:1"></div><div class="gris" style="height:80%;flex:1"></div><div class="gris" style="height:30%;flex:1"></div><div class="gris" style="height:90%;flex:1"></div><div class="gris" style="height:95%;flex:1"></div></div></div>
+        <div class="caja" style="flex:1;height:170px;text-align:center"><small>Dona por severidad</small><div style="width:110px;height:110px;border-radius:50%;border:22px solid #bbb;margin:10px auto;box-sizing:border-box"></div></div>
+      </div>
+      <div class="fila" style="margin-top:12px">
+        <div class="caja" style="flex:1;height:100px"><small>Barras horizontales: eventos por sistema</small><div class="lineas"><div style="width:90%"></div><div style="width:70%"></div><div style="width:55%"></div></div></div>
+        <div class="caja" style="flex:1;height:100px"><small>Barras: eventos por tipo</small><div class="lineas"><div style="width:80%"></div><div style="width:40%"></div><div style="width:25%"></div></div></div>
+      </div>
+      <div class="caja" style="margin-top:12px"><small><b>Tabla de alertas</b>: IP · País · Patrón · Riesgo · Intentos · Cuentas · [Ver eventos]</small>
+        <div class="lineas"><div></div><div></div><div></div></div></div>
+      <div class="nota" style="margin-top:8px">Los cálculos se hacen en la base de datos (aggregation); al navegador solo llega el resumen</div>
+    </div>
+  </div>
+</div>
+
+<!-- 3. Formulario de incidente -->
+<div class="marco" id="m-incidente" style="width:900px">
+  <div class="chrome"><i></i><i></i><i></i><span>centinela.onrender.com/panel.html#reportar</span></div>
+  <div class="fila" style="gap:0;height:520px">
+    <div class="menu" style="width:160px;background:#666;padding:12px 8px">
+      <div style="border:0;font-weight:bold">▣ Centinela</div><div>Inicio</div><div>Reportar incidente</div><div>Mis incidentes</div><div>Solicitar acceso</div><div>Mis solicitudes</div><div>Mi perfil</div>
+    </div>
+    <div style="flex:1;padding:18px">
+      <h3>Nuevo incidente de seguridad</h3>
+      <div class="lbl">Título breve</div><div class="input"></div>
+      <div class="fila"><div style="flex:1"><div class="lbl">Tipo de incidente ▾</div><div class="input"></div></div><div style="flex:1"><div class="lbl">Severidad ▾</div><div class="input"></div></div></div>
+      <div class="fila"><div style="flex:1"><div class="lbl">Sistema afectado ▾ (opcional)</div><div class="input"></div></div><div style="flex:1"><div class="lbl">Fecha y hora de detección</div><div class="input"></div></div></div>
+      <div class="lbl">Describe lo que pasó</div><div class="input" style="height:90px"></div>
+      <div class="fila" style="align-items:center"><div class="btn">Enviar reporte</div><div class="nota">Validación en el navegador + en el servidor. Al enviar se genera un folio.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- 4. Móvil -->
+<div class="marco" id="m-movil" style="width:300px;border-radius:26px">
+  <div style="height:520px;padding:14px">
+    <div class="fila" style="align-items:center;justify-content:space-between;border-bottom:2px solid #999;padding-bottom:8px"><span class="btn2">☰</span><b>Mis incidentes</b><span class="btn2">Salir</span></div>
+    <div class="caja" style="margin-top:12px;font-size:12px">
+      <div><b>Folio:</b> INC-2026…</div><div><b>Título:</b> Correo sospechoso…</div><div><b>Severidad:</b> <span class="btn2" style="padding:0 6px">Alta</span></div><div><b>Estado:</b> <span class="btn2" style="padding:0 6px">Abierto</span></div><div class="btn" style="margin-top:6px;padding:4px 10px">Ver</div>
+    </div>
+    <div class="caja" style="margin-top:10px;font-size:12px">
+      <div><b>Folio:</b> INC-2026…</div><div><b>Título:</b> Notebook extraviado…</div><div><b>Estado:</b> <span class="btn2" style="padding:0 6px">En análisis</span></div><div class="btn" style="margin-top:6px;padding:4px 10px">Ver</div>
+    </div>
+    <div class="nota" style="margin-top:12px">En pantallas angostas las tablas se apilan como tarjetas y el menú se oculta tras ☰</div>
+  </div>
+</div>
+</body>
+</html>

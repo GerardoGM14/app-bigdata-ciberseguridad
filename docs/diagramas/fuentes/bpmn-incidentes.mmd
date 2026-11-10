@@ -1,0 +1,36 @@
+flowchart LR
+  subgraph L1["Colaborador"]
+    direction LR
+    s((" ")) --> a1("Detecta situación<br/>sospechosa")
+    a1 --> a2("Completa formulario<br/>de incidente")
+    a9("Consulta estado y<br/>seguimiento")
+  end
+  subgraph L2["Centinela (sistema)"]
+    direction LR
+    b1("Valida datos y<br/>genera folio") --> b2{"¿Datos<br/>válidos?"}
+    b2 -- "No" --> b3("Muestra errores<br/>en el formulario")
+    b2 -- "Sí" --> b4("Registra incidente<br/>y auditoría")
+  end
+  subgraph L3["Analista de seguridad (Administrador)"]
+    direction LR
+    c1("Revisa incidente y<br/>eventos relacionados") --> c2("Asigna responsable<br/>y pasa a análisis")
+    c2 --> c3("Aplica contención<br/>y registra acciones")
+    c3 --> c4{"¿Resuelto?"}
+    c4 -- "No" --> c3
+    c4 -- "Sí" --> c5("Marca resuelto<br/>y cierra")
+    c5 --> e((("Fin")))
+  end
+  a2 --> b1
+  b3 --> a2
+  b4 --> c1
+  b4 -.-> a9
+  c5 -.-> a9
+
+  classDef ev fill:#e7f6ee,stroke:#1a7f4b,color:#17663d
+  classDef fin fill:#fde8e6,stroke:#c0392b,color:#a32b1d,stroke-width:3px
+  classDef tarea fill:#ffffff,stroke:#0f6cbd,color:#10304f
+  classDef comp fill:#fdf3e1,stroke:#b7791f,color:#5a3b06
+  class s ev
+  class e fin
+  class a1,a2,a9,b1,b3,b4,c1,c2,c3,c5 tarea
+  class b2,c4 comp

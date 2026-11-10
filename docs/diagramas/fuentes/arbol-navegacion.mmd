@@ -1,0 +1,45 @@
+flowchart LR
+  raiz["Centinela"]
+  raiz --> pub["Área pública"]
+  raiz --> col["Perfil Colaborador<br/>/panel.html"]
+  raiz --> adm["Perfil Administrador<br/>/admin.html"]
+
+  pub --> p1["Iniciar sesión"]
+  pub --> p2["Crear cuenta"]
+  pub --> p3["Recuperar contraseña"]
+  p3 --> p4["Restablecer contraseña<br/>(enlace por correo)"]
+
+  col --> c1["Inicio<br/>(resumen personal)"]
+  col --> c2["Reportar incidente"]
+  col --> c3["Mis incidentes"]
+  c3 --> c31["Detalle y seguimiento"]
+  col --> c4["Solicitar acceso"]
+  col --> c5["Mis solicitudes"]
+  col --> per["Mi perfil"]
+
+  adm --> a1["Dashboard"]
+  a1 --> a11["Alertas de fuerza bruta"]
+  adm --> a2["Explorador de eventos"]
+  adm --> a3["Carga masiva"]
+  adm --> a4["Incidentes"]
+  a4 --> a41["Gestionar incidente"]
+  adm --> a5["Solicitudes de acceso"]
+  a5 --> a51["Aprobar / Rechazar"]
+  adm --> a6["Activos"]
+  a6 --> a61["Crear / Editar"]
+  adm --> a7["Usuarios y roles"]
+  a7 --> a71["Cambiar rol · Activar ·<br/>Desbloquear"]
+  adm --> a8["Auditoría"]
+  adm --> per
+
+  per --> per1["Editar datos"]
+  per --> per2["Cambiar contraseña"]
+
+  classDef r fill:#0b1f33,stroke:#0b1f33,color:#ffffff
+  classDef n1 fill:#0f6cbd,stroke:#0b569a,color:#ffffff
+  classDef n2 fill:#eef4fd,stroke:#2f6fb5,color:#10304f
+  classDef n3 fill:#ffffff,stroke:#9fb3c8,color:#10304f
+  class raiz r
+  class pub,col,adm n1
+  class p1,p2,p3,c1,c2,c3,c4,c5,a1,a2,a3,a4,a5,a6,a7,a8,per n2
+  class p4,c31,a11,a41,a51,a61,a71,per1,per2 n3

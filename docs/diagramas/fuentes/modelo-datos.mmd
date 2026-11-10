@@ -1,0 +1,93 @@
+erDiagram
+  USUARIOS {
+    ObjectId _id PK
+    string nombre
+    string apellido
+    string email UK "único, minúsculas"
+    string passwordHash "bcrypt costo 12"
+    string rol "admin | colaborador"
+    string area
+    string cargo
+    bool activo
+    int intentosFallidos
+    date bloqueadoHasta
+    date passwordCambiadaEn
+    date ultimoAcceso
+  }
+  ACTIVOS {
+    ObjectId _id PK
+    string codigo UK "ej. VPN, ERP"
+    string nombre
+    string tipo
+    string criticidad
+    ObjectId responsable FK
+    bool activo
+  }
+  INCIDENTES {
+    ObjectId _id PK
+    string folio UK
+    string titulo
+    string descripcion
+    string categoria
+    string severidad
+    string estado
+    date fechaDeteccion
+    ObjectId activo FK
+    ObjectId reportadoPor FK
+    ObjectId asignadoA FK
+    array historial "subdocumentos embebidos"
+  }
+  HISTORIAL_EMBEBIDO {
+    date fecha
+    ObjectId usuario FK
+    string accion
+    string comentario
+  }
+  SOLICITUDES_ACCESO {
+    ObjectId _id PK
+    ObjectId solicitante FK
+    ObjectId activo FK
+    string nivelAcceso
+    string justificacion
+    string estado
+    ObjectId revisadoPor FK
+    date fechaRevision
+  }
+  EVENTOS {
+    date fecha "timeField"
+    object origen "metaField: sistema"
+    string tipo
+    string severidad
+    string ip
+    string usuario
+    string pais
+    string mensaje
+    string lote
+  }
+  AUDITORIA {
+    ObjectId _id PK
+    date fecha
+    ObjectId usuario FK
+    string accion
+    string entidad
+    string detalle
+    string ip
+  }
+  TOKENS_RECUPERACION {
+    ObjectId _id PK
+    ObjectId usuario FK
+    string tokenHash UK "SHA-256"
+    date expiraEn "índice TTL"
+    bool usado
+  }
+
+  USUARIOS ||--o{ INCIDENTES : "reporta"
+  USUARIOS |o--o{ INCIDENTES : "atiende"
+  ACTIVOS |o--o{ INCIDENTES : "afectado en"
+  INCIDENTES ||--|{ HISTORIAL_EMBEBIDO : "embebe"
+  USUARIOS ||--o{ SOLICITUDES_ACCESO : "solicita"
+  ACTIVOS ||--o{ SOLICITUDES_ACCESO : "sobre"
+  USUARIOS |o--o{ ACTIVOS : "es responsable"
+  ACTIVOS ||..o{ EVENTOS : "origen.sistema = codigo"
+  USUARIOS ||--o{ AUDITORIA : "genera"
+  USUARIOS ||--o{ TOKENS_RECUPERACION : "solicita"

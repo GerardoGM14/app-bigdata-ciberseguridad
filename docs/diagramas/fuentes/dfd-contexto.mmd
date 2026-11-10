@@ -1,0 +1,19 @@
+flowchart LR
+  col["Colaborador"]
+  adm["Administrador /<br/>Analista de seguridad"]
+  sis["Sistemas de la empresa<br/>(VPN, ERP, firewall, correo)"]
+  cor["Servicio de correo"]
+  P0(("0<br/>Centinela"))
+
+  col -- "credenciales, reportes de incidentes,<br/>solicitudes de acceso" --> P0
+  P0 -- "estado de incidentes y solicitudes" --> col
+  adm -- "archivos de eventos, decisiones,<br/>gestión de usuarios y activos" --> P0
+  P0 -- "indicadores, alertas,<br/>bitácora de auditoría" --> adm
+  sis -- "eventos de seguridad (logs)" --> P0
+  P0 -- "enlace de recuperación" --> cor
+  cor -- "correo al usuario" --> col
+
+  classDef ent fill:#eef4fd,stroke:#2f6fb5,color:#10304f
+  classDef proc fill:#0f6cbd,stroke:#0b569a,color:#ffffff
+  class col,adm,sis,cor ent
+  class P0 proc

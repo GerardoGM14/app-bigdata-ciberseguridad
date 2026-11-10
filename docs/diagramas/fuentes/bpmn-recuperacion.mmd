@@ -1,0 +1,36 @@
+flowchart LR
+  subgraph L1["Usuario"]
+    direction LR
+    s((" ")) --> a1("Ingresa su correo en<br/>¿Olvidaste tu contraseña?")
+    a2("Abre el enlace<br/>recibido")
+    a2 --> a3("Escribe y confirma<br/>nueva contraseña")
+    a5("Inicia sesión con<br/>la nueva contraseña") --> e((("Fin")))
+  end
+  subgraph L2["Centinela (sistema)"]
+    direction LR
+    b1{"¿Cuenta existe<br/>y está activa?"}
+    b1 -- "Sí" --> b2("Genera token aleatorio<br/>guarda solo su hash SHA-256<br/>vigencia 30 min")
+    b1 -- "No" --> b0("Responde mensaje<br/>neutro")
+    b2 --> b3("Responde el mismo<br/>mensaje neutro")
+    b4{"¿Token válido,<br/>vigente y sin usar?"}
+    b4 -- "No" --> b5("Informa enlace<br/>expirado")
+    b4 -- "Sí" --> b6("Cifra con bcrypt, marca token usado<br/>e invalida otras sesiones")
+  end
+  subgraph L3["Servicio de correo (Brevo)"]
+    direction LR
+    c1("Envía correo con<br/>enlace de un solo uso")
+  end
+  a1 --> b1
+  b2 --> c1
+  c1 --> a2
+  a3 --> b4
+  b6 --> a5
+
+  classDef ev fill:#e7f6ee,stroke:#1a7f4b,color:#17663d
+  classDef fin fill:#fde8e6,stroke:#c0392b,color:#a32b1d,stroke-width:3px
+  classDef tarea fill:#ffffff,stroke:#0f6cbd,color:#10304f
+  classDef comp fill:#fdf3e1,stroke:#b7791f,color:#5a3b06
+  class s ev
+  class e fin
+  class a1,a2,a3,a5,b0,b2,b3,b5,b6,c1 tarea
+  class b1,b4 comp

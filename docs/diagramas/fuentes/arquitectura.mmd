@@ -1,0 +1,53 @@
+flowchart LR
+  subgraph F["Fuentes de datos · Transportes Cordillera"]
+    direction TB
+    f1["VPN / Firewall"]
+    f2["ERP / WMS"]
+    f3["Correo corporativo"]
+    f4["Portal de clientes"]
+    f5["Directorio de identidades"]
+  end
+
+  subgraph N["Navegador del usuario"]
+    direction TB
+    ui["HTML5 + CSS3 propio<br/>JavaScript (Fetch API)<br/>Chart.js"]
+  end
+
+  subgraph R["Render · servicio web Node.js 20 (HTTPS)"]
+    direction TB
+    seg["Capa de seguridad<br/>Helmet + CSP · rate limit<br/>validación · sanitización NoSQL<br/>JWT en cookie httpOnly"]
+    api["API REST Express<br/>/auth /perfil /incidentes<br/>/solicitudes /activos /usuarios"]
+    ing["Ingesta y ETL<br/>validación y normalización<br/>insertMany por lotes de 1.000"]
+    ana["Motor analítico<br/>aggregation pipelines<br/>$facet · $dateTrunc"]
+    seg --> api
+    seg --> ing
+    api --> ana
+  end
+
+  subgraph M["MongoDB Atlas · clúster replicado (3 nodos)"]
+    direction TB
+    ev[("eventos<br/>colección de series de tiempo")]
+    op[("usuarios · activos · incidentes<br/>solicitudes_acceso")]
+    au[("auditoria · tokens_recuperacion<br/>(índice TTL)")]
+  end
+
+  mail["Brevo<br/>correo transaccional"]
+
+  F -- "CSV / JSON (carga masiva)" --> ing
+  F -- "POST /api/eventos/ingesta<br/>+ X-API-Key" --> ing
+  ui <-- "HTTPS · JSON" --> seg
+  ing --> ev
+  api --> op
+  api --> au
+  ana --> ev
+  api -- "enlace de recuperación" --> mail
+  mail -. "correo" .-> ui
+
+  classDef fuente fill:#eef4fd,stroke:#2f6fb5,color:#10304f
+  classDef app fill:#ffffff,stroke:#0f6cbd,color:#10304f
+  classDef bd fill:#e3f5ef,stroke:#14a38b,color:#0b3d33
+  classDef ext fill:#fdf3e1,stroke:#b7791f,color:#5a3b06
+  class f1,f2,f3,f4,f5 fuente
+  class ui,seg,api,ing,ana app
+  class ev,op,au bd
+  class mail ext
