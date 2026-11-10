@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel · Centinela</title>
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="lateral" aria-label="Menú principal">
+      <a class="logo" href="#inicio"><img class="logo__icono" src="/img/logo.svg" alt=""> Centinela</a>
+      <ul class="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li class="menu__titulo">Incidentes</li>
+        <li><a href="#reportar">Reportar incidente</a></li>
+        <li><a href="#mis-incidentes">Mis incidentes</a></li>
+        <li class="menu__titulo">Accesos</li>
+        <li><a href="#solicitar">Solicitar acceso</a></li>
+        <li><a href="#mis-solicitudes">Mis solicitudes</a></li>
+        <li class="menu__titulo">Cuenta</li>
+        <li><a href="/perfil.html">Mi perfil</a></li>
+      </ul>
+      <div class="lateral__pie"><strong data-usuario-nombre></strong><span data-usuario-rol></span></div>
+    </aside>
+
+    <div class="principal">
+      <header class="barra">
+        <button class="btn btn--sec btn--chico barra__menu" type="button" aria-expanded="false" aria-label="Abrir menú">☰</button>
+        <h1 data-titulo>Inicio</h1>
+        <div class="barra__acciones">
+          <span class="usuario-nombre ayuda" data-usuario-nombre></span>
+          <button class="btn btn--sec btn--chico" type="button" data-salir>Cerrar sesión</button>
+        </div>
+      </header>
+
+      <main class="contenido">
+        <!-- Inicio -->
+        <section data-vista="inicio" data-nombre="Inicio" hidden>
+          <div class="rejilla">
+            <div class="tarjeta bienvenida">
+              <h2>Hola, <span id="saludo"></span></h2>
+              <p>Si ves algo extraño en tu correo, en tu equipo o en los sistemas, repórtalo. Mientras antes lo sepamos, menor es el daño.</p>
+            </div>
+            <div class="kpis">
+              <div class="kpi"><div class="kpi__valor" id="k-inc">0</div><div class="kpi__etiqueta">Incidentes reportados</div></div>
+              <div class="kpi kpi--alerta"><div class="kpi__valor" id="k-inc-abiertos">0</div><div class="kpi__etiqueta">En curso</div></div>
+              <div class="kpi kpi--ok"><div class="kpi__valor" id="k-sol-ok">0</div><div class="kpi__etiqueta">Accesos aprobados</div></div>
+              <div class="kpi kpi--peligro"><div class="kpi__valor" id="k-sol-pend">0</div><div class="kpi__etiqueta">Solicitudes pendientes</div></div>
+            </div>
+            <div class="accesos">
+              <a class="acceso" href="#reportar"><strong>Reportar un incidente</strong><span>Phishing, malware, pérdida de equipo, accesos extraños…</span></a>
+              <a class="acceso" href="#solicitar"><strong>Solicitar acceso</strong><span>Pide permisos a un sistema y sigue su aprobación.</span></a>
+              <a class="acceso" href="/perfil.html"><strong>Mi perfil</strong><span>Actualiza tus datos o cambia tu contraseña.</span></a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Formulario 1: reportar incidente -->
+        <section data-vista="reportar" data-nombre="Reportar incidente" hidden>
+          <div class="tarjeta">
+            <div class="tarjeta__cabecera">
+              <div><h2>Nuevo incidente de seguridad</h2><p class="ayuda">El equipo de Seguridad TI recibirá el reporte de inmediato.</p></div>
+            </div>
+            <form class="form form--2" id="form-incidente" novalidate>
+              <div class="aviso completo" role="alert"></div>
+              <div class="campo completo">
+                <label for="i-titulo">Título breve</label>
+                <input id="i-titulo" name="titulo" required minlength="5" maxlength="120" placeholder="Ej.: Correo que pide actualizar datos bancarios" data-msg="Entre 5 y 120 caracteres">
+              </div>
+              <div class="campo">
+                <label for="i-categoria">Tipo de incidente</label>
+                <select id="i-categoria" name="categoria" required data-msg="Selecciona el tipo">
+                  <option value="">Selecciona</option>
+                  <option value="phishing">Phishing / correo sospechoso</option>
+                  <option value="malware">Malware / virus</option>
+                  <option value="acceso_no_autorizado">Acceso no autorizado</option>
+                  <option value="perdida_equipo">Pérdida o robo de equipo</option>
+                  <option value="fuga_datos">Fuga o exposición de datos</option>
+                  <option value="suplantacion">Suplantación de identidad</option>
+                  <option value="otro">Otro</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="i-severidad">¿Qué tan grave crees que es?</label>
+                <select id="i-severidad" name="severidad" required>
+                  <option value="baja">Baja: no afecta mi trabajo</option>
+                  <option value="media" selected>Media: afecta parcialmente</option>
+                  <option value="alta">Alta: hay datos o sistemas comprometidos</option>
+                  <option value="critica">Crítica: la operación está detenida</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="i-activo">Sistema afectado <span class="opcional">(opcional)</span></label>
+                <select id="i-activo" name="activo"></select>
+              </div>
+              <div class="campo">
+                <label for="i-fecha">¿Cuándo lo detectaste?</label>
+                <input id="i-fecha" name="fechaDeteccion" type="datetime-local" required data-msg="Indica fecha y hora">
+              </div>
+              <div class="campo completo">
+                <label for="i-descripcion">Describe lo que pasó</label>
+                <textarea id="i-descripcion" name="descripcion" required minlength="20" maxlength="2000" placeholder="Qué viste, qué hiciste y si alguien más está afectado" data-msg="Escribe al menos 20 caracteres"></textarea>
+              </div>
+              <div class="completo"><button class="btn" type="submit">Enviar reporte</button></div>
+            </form>
+          </div>
+        </section>
+
+        <section data-vista="mis-incidentes" data-nombre="Mis incidentes" hidden>
+          <div class="tarjeta">
+            <div class="tarjeta__cabecera"><h2>Incidentes que he reportado</h2><a class="btn btn--chico" href="#reportar">+ Nuevo</a></div>
+            <div class="tabla-envoltura">
+              <table class="tabla-responsive" id="t-mis-incidentes">
+                <thead><tr><th>Folio</th><th>Título</th><th>Tipo</th><th>Severidad</th><th>Estado</th><th>Reportado</th><th></th></tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <!-- Formulario 2: solicitud de acceso -->
+        <section data-vista="solicitar" data-nombre="Solicitar acceso" hidden>
+          <div class="tarjeta">
+            <div class="tarjeta__cabecera">
+              <div><h2>Solicitud de acceso a un sistema</h2><p class="ayuda">Pide solo el nivel que necesitas para tu trabajo (principio de mínimo privilegio).</p></div>
+            </div>
+            <form class="form form--2" id="form-solicitud" novalidate>
+              <div class="aviso completo" role="alert"></div>
+              <div class="campo">
+                <label for="s-activo">Sistema</label>
+                <select id="s-activo" name="activo" required data-msg="Selecciona un sistema"></select>
+              </div>
+              <div class="campo">
+                <label for="s-nivel">Nivel de acceso</label>
+                <select id="s-nivel" name="nivelAcceso" required data-msg="Selecciona el nivel">
+                  <option value="">Selecciona</option>
+                  <option value="lectura">Lectura: solo consultar</option>
+                  <option value="escritura">Escritura: crear y modificar</option>
+                  <option value="administrador">Administrador: configuración completa</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="s-termino">Fecha de término <span class="opcional">(opcional, para accesos temporales)</span></label>
+                <input id="s-termino" name="fechaTermino" type="date">
+              </div>
+              <div class="campo completo">
+                <label for="s-justificacion">¿Para qué lo necesitas?</label>
+                <textarea id="s-justificacion" name="justificacion" required minlength="15" maxlength="600" placeholder="Ej.: Reemplazo a un compañero de vacaciones y debo emitir guías de despacho" data-msg="Entre 15 y 600 caracteres"></textarea>
+              </div>
+              <div class="completo"><button class="btn" type="submit">Enviar solicitud</button></div>
+            </form>
+          </div>
+        </section>
+
+        <section data-vista="mis-solicitudes" data-nombre="Mis solicitudes" hidden>
+          <div class="tarjeta">
+            <div class="tarjeta__cabecera"><h2>Mis solicitudes de acceso</h2><a class="btn btn--chico" href="#solicitar">+ Nueva</a></div>
+            <div class="tabla-envoltura">
+              <table class="tabla-responsive" id="t-mis-solicitudes">
+                <thead><tr><th>Sistema</th><th>Nivel</th><th>Estado</th><th>Enviada</th><th>Respuesta</th></tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <dialog id="dialogo">
+    <div class="dialogo__cabecera"><h2 id="dialogo-titulo"></h2><button class="dialogo__cerrar" type="button" aria-label="Cerrar">×</button></div>
+    <div class="dialogo__cuerpo" id="dialogo-cuerpo"></div>
+  </dialog>
+
+  <script src="/js/comun.js"></script>
+  <script src="/js/panel.js"></script>
+</body>
+</html>

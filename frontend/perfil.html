@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi perfil · Centinela</title>
+  <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="lateral" aria-label="Menú principal">
+      <a class="logo" href="/index.html" data-inicio><img class="logo__icono" src="/img/logo.svg" alt=""> Centinela</a>
+      <ul class="menu">
+        <li><a href="/index.html" data-inicio>← Volver al panel</a></li>
+        <li class="menu__titulo">Cuenta</li>
+        <li><a href="#perfil" aria-current="page">Mi perfil</a></li>
+      </ul>
+      <div class="lateral__pie"><strong data-usuario-nombre></strong><span data-usuario-rol></span></div>
+    </aside>
+    <div class="principal">
+      <header class="barra">
+        <button class="btn btn--sec btn--chico barra__menu" type="button" aria-expanded="false" aria-label="Abrir menú">☰</button>
+        <h1>Mi perfil</h1>
+        <div class="barra__acciones">
+          <span class="usuario-nombre ayuda" data-usuario-nombre></span>
+          <button class="btn btn--sec btn--chico" type="button" data-salir>Cerrar sesión</button>
+        </div>
+      </header>
+      <main class="contenido">
+        <div class="rejilla rejilla--2">
+          <div class="tarjeta">
+            <div class="tarjeta__cabecera"><h2>Datos personales</h2></div>
+            <form class="form form--2" id="form-perfil" novalidate>
+              <div class="aviso completo" role="alert"></div>
+              <div class="campo">
+                <label for="p-nombre">Nombre</label>
+                <input id="p-nombre" name="nombre" required minlength="2" maxlength="60" pattern="[A-Za-zÁÉÍÓÚÜÑáéíóúüñ' \-]+" data-msg="Solo letras, entre 2 y 60 caracteres">
+              </div>
+              <div class="campo">
+                <label for="p-apellido">Apellido</label>
+                <input id="p-apellido" name="apellido" required minlength="2" maxlength="60" pattern="[A-Za-zÁÉÍÓÚÜÑáéíóúüñ' \-]+" data-msg="Solo letras, entre 2 y 60 caracteres">
+              </div>
+              <div class="campo completo">
+                <label for="p-email">Correo electrónico</label>
+                <input id="p-email" type="email" disabled>
+                <small class="ayuda">El correo identifica tu cuenta y solo puede cambiarlo un administrador.</small>
+              </div>
+              <div class="campo">
+                <label for="p-area">Área</label>
+                <input id="p-area" name="area" maxlength="60">
+              </div>
+              <div class="campo">
+                <label for="p-cargo">Cargo</label>
+                <input id="p-cargo" name="cargo" maxlength="60">
+              </div>
+              <div class="campo completo">
+                <label for="p-telefono">Teléfono <span class="opcional">(opcional)</span></label>
+                <input id="p-telefono" name="telefono" type="tel" pattern="\+?[0-9 ]{8,15}" placeholder="+56 9 1234 5678" data-msg="Entre 8 y 15 dígitos">
+              </div>
+              <div class="completo"><button class="btn" type="submit">Guardar cambios</button></div>
+            </form>
+          </div>
+
+          <div class="tarjeta">
+            <div class="tarjeta__cabecera"><h2>Cambiar contraseña</h2></div>
+            <form class="form" id="form-password" novalidate>
+              <div class="aviso" role="alert"></div>
+              <div class="campo">
+                <label for="c-actual">Contraseña actual</label>
+                <input id="c-actual" name="actual" type="password" required autocomplete="current-password" maxlength="72" data-msg="Ingresa tu contraseña actual">
+              </div>
+              <div class="campo">
+                <label for="c-nueva">Nueva contraseña</label>
+                <input id="c-nueva" name="nueva" type="password" required autocomplete="new-password" maxlength="72" data-regla="password">
+              </div>
+              <div class="campo">
+                <label for="c-confirmacion">Repite la nueva contraseña</label>
+                <input id="c-confirmacion" name="confirmacion" type="password" required autocomplete="new-password" maxlength="72" data-igual-a="nueva" data-msg="Repite la contraseña">
+              </div>
+              <p class="ayuda">Al cambiarla se cerrarán tus sesiones en otros equipos.</p>
+              <div><button class="btn" type="submit">Actualizar contraseña</button></div>
+            </form>
+            <hr>
+            <dl class="datos">
+              <dt>Rol</dt><dd data-usuario-rol></dd>
+              <dt>Último acceso</dt><dd id="p-ultimo"></dd>
+              <dt>Cuenta creada</dt><dd id="p-creada"></dd>
+            </dl>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <script src="/js/comun.js"></script>
+  <script src="/js/perfil.js"></script>
+</body>
+</html>
